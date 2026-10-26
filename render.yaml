@@ -2,7 +2,7 @@ services:
   - type: web
     name: jy-career-agent-backend
     env: docker
-    dockerfilePath: ./backend/Dockerfile
+    dockerfilePath: ./Dockerfile
     plan: free
     region: oregon
     envVars:
