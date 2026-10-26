@@ -15,16 +15,35 @@ import {
   providedIn: 'root'
 })
 export class ApiService {
-  private get baseUrl(): string {
+  get baseUrl(): string {
     if (typeof window !== 'undefined') {
       const customUrl = localStorage.getItem('jy_api_base_url');
-      if (customUrl) return customUrl.replace(/\/+$/, '');
+      if (customUrl) {
+        let trimmed = customUrl.trim().replace(/\/+$/, '');
+        if (!trimmed.endsWith('/api')) trimmed += '/api';
+        return trimmed;
+      }
       if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
         return 'http://localhost:5000/api';
       }
       return '/api';
     }
     return 'http://localhost:5000/api';
+  }
+
+  setCustomBaseUrl(url: string): void {
+    if (typeof window !== 'undefined') {
+      let trimmed = url.trim().replace(/\/+$/, '');
+      if (trimmed && !trimmed.endsWith('/api')) trimmed += '/api';
+      localStorage.setItem('jy_api_base_url', trimmed);
+    }
+  }
+
+  getCustomBaseUrl(): string {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('jy_api_base_url') || '';
+    }
+    return '';
   }
 
   constructor(private http: HttpClient) {}

@@ -34,6 +34,26 @@
   <div *ngIf="errorMessage" class="toast-banner toast-error fade-in">
     <span>{{ errorMessage }}</span>
   </div>
+  <!-- Backend Connection Setup Banner -->
+  <div *ngIf="!isBackendReachable && !isLoading" class="api-connect-banner">
+    <div class="api-connect-content">
+      <div class="api-connect-text">
+        <span class="warning-badge">⚠️ Backend API Disconnected</span>
+        <span class="api-connect-desc">Enter your live Render backend URL (e.g. <code>https://your-service.onrender.com</code>) to connect this dashboard:</span>
+      </div>
+      <div class="api-connect-form">
+        <input 
+          type="text" 
+          [(ngModel)]="backendUrlInput" 
+          placeholder="https://your-service.onrender.com" 
+          class="api-input"
+          (keyup.enter)="saveBackendUrl()"
+        />
+        <button class="btn btn-primary" (click)="saveBackendUrl()">Connect</button>
+        <button class="btn btn-secondary" *ngIf="backendUrlInput" (click)="resetBackendUrl()">Reset</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Primary Tab Bar -->
   <nav class="nav-tabs">

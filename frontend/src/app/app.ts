@@ -49,6 +49,10 @@ export class AppComponent implements OnInit, OnDestroy {
   statusUpdateNewStatus = 'Submitted';
   statusUpdateReason = '';
 
+  // Backend Connection State
+  backendUrlInput = '';
+  isBackendReachable = true;
+
   // Operation State
   isLoading = false;
   actionMessage = '';
@@ -59,6 +63,7 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(public api: ApiService) {}
 
   ngOnInit(): void {
+    this.backendUrlInput = this.api.getCustomBaseUrl();
     this.loadAllData();
     // Auto-refresh stats every 15 seconds
     this.pollInterval = setInterval(() => {
@@ -68,6 +73,25 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     if (this.pollInterval) clearInterval(this.pollInterval);
+  }
+
+  saveBackendUrl(): void {
+    if (this.backendUrlInput && this.backendUrlInput.trim()) {
+      this.api.setCustomBaseUrl(this.backendUrlInput.trim());
+      this.actionMessage = 'Backend API URL updated! Connecting...';
+      this.loadAllData();
+      setTimeout(() => { this.actionMessage = ''; }, 3000);
+    }
+  }
+
+  resetBackendUrl(): void {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('jy_api_base_url');
+      this.backendUrlInput = '';
+      this.actionMessage = 'Reset backend URL to default. Reconnecting...';
+      this.loadAllData();
+      setTimeout(() => { this.actionMessage = ''; }, 3000);
+    }
   }
 
   loadAllData(): void {
@@ -85,8 +109,14 @@ export class AppComponent implements OnInit, OnDestroy {
 
   refreshStats(): void {
     this.api.getDashboardStats().subscribe({
-      next: (data) => { this.stats = data; },
-      error: (err) => { console.error('Failed to load stats', err); }
+      next: (data) => { 
+        this.stats = data; 
+        this.isBackendReachable = true;
+      },
+      error: (err) => { 
+        console.error('Failed to load stats', err); 
+        this.isBackendReachable = false;
+      }
     });
   }
 
