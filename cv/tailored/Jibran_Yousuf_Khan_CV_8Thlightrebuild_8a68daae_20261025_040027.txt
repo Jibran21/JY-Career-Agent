@@ -1,0 +1,67 @@
+﻿==========================================================================
+                    JIBRAN YOUSUF KHAN
+      Data & Software Engineer | .NET • Angular • Data • AI
+ Gulshan-e-Iqbal, Karachi, Pakistan | jibrankhalily@gmail.com | +92 321 2351118
+==========================================================================
+
+PROFESSIONAL SUMMARY
+--------------------------------------------------------------------------
+Versatile Senior Data & Software Engineer with approximately 10 years of experience delivering high-performance, scalable enterprise systems across FinTech, Healthcare, and ERP domains. Specialized in .NET Core / ASP.NET Core & C# enterprise architecture, AI-agent workflows & LLM orchestration. Experienced in architecting secure RESTful APIs, multi-threaded data processors, and resilient distributed solutions. Strictly committed to Clean Architecture, asynchronous performance patterns, and maintainable software engineering.
+
+CORE TECHNICAL COMPETENCIES
+--------------------------------------------------------------------------
+Target Matching Skills: C#, TypeScript
+Languages & Frameworks: C#, VB.NET, .NET Core, .NET Framework, ASP.NET MVC, ASP.NET Web API, Web Forms, WinForms, Angular, AngularJS, TypeScript, Node.js, React.js, Bootstrap, Ant Design (Ant Zorro), HTML5/CSS3
+Database & Reporting:   MS SQL Server, Entity Framework / EF Core, ADO.NET, N-Hibernate, SSIS, SSRS, Power BI, Crystal Reports, DevExpress, Telerik, iTextSharp
+Architecture & Design:  Clean Architecture, Layered Architecture, RESTful APIs, Web Services, SignalR, Firebase Cloud Messaging (FCM)
+AI & Agentic Systems:   LLM API integration, AI agents, Tool / function calling, RAG concepts, Agent memory, Workflow orchestration, Human-in-the-loop approval, Microsoft Semantic Kernel, Microsoft Agent Framework, AutoGen (exploration)
+Tools & DevOps:         Azure DevOps, TFS, Git (GitHub / Bitbucket), SVN, Jira, SQL Server Agent
+Specialties:            ETL Pipeline Architecture, Data Warehousing, Database Query Optimization, Multi-threading & Automation
+
+AI & AGENTIC SYSTEMS FOCUS
+--------------------------------------------------------------------------
+• Designing AI-agent workflows combining LLMs with tool/function calling, structured tasks, and human approval.
+• Hands-on exploration of Microsoft Semantic Kernel and Microsoft Agent Framework in the .NET ecosystem.
+• Planning AI-enabled systems with .NET, Angular, and SQL Server using Retrieval-Augmented Generation (RAG).
+
+PROFESSIONAL EXPERIENCE
+--------------------------------------------------------------------------
+SENIOR CONSULTANT / SENIOR SOFTWARE ENGINEER | Think Enabled (Jan 2024 – Present)
+Location: Karachi, Pakistan
+  • Design, develop, and maintain enterprise software modules for Supply Chain Management and Operating Theatre (OT) operations, improving inventory tracking, procurement workflows, and clinical data management.
+  • Build custom automation and data-processing solutions using Angular, .NET Core, and .NET Framework.
+  • Develop high-performance, multi-threaded console applications to process large datasets efficiently, using asynchronous programming and performance-focused design.
+  • Design, deploy, and maintain SSIS ETL pipelines feeding Power BI dashboards and executive reports; automate dataset refreshes with SQL Server Agent and SSIS packages.
+  • Implement incremental data-loading strategies to reduce processing time and server overhead.
+  • Architect real-time communication features using SignalR hubs and integrate Firebase Cloud Messaging (FCM) for push notifications, transactional alerts, and booking updates across Android, iOS, and web platforms.
+  • Design and deploy interactive, paginated SSRS reports backed by complex SQL Server stored procedures and views for business intelligence and analytics.
+  • Improve API and database performance through asynchronous programming, query tuning, strategic caching, and Entity Framework Core schema migrations.
+  • Apply Clean Architecture and layered design patterns to improve maintainability, reusability, and testability.
+  • Lead technical design and architectural planning for KKT International healthcare ERP solutions.
+
+SOFTWARE ENGINEER | Aion Digital (Mar 2021 – Dec 2023)
+Location: Karachi, Pakistan
+  • Engineered digital banking solutions for Retail, Corporate, and Internet Banking using .NET MVC, Node.js, and Angular.
+  • Developed secure, high-concurrency RESTful APIs powering core financial workflows.
+  • Built responsive, accessible user interfaces using Angular Material and Bootstrap.
+
+TEAM LEAD | Out2Sol (Oct 2019 – Feb 2021)
+Location: Karachi, Pakistan
+  • Led cross-functional mobile development delivering cross-platform iOS and Android applications using Ionic Framework.
+  • Architected AngularJS single-page applications, developing custom directives, services, and modular UI components to improve user experience and efficiency.
+
+ERP DEVELOPER | Smart Works Systems (Sep 2015 – Oct 2019)
+Location: Karachi, Pakistan
+  • Authored complex T-SQL queries, stored procedures, triggers, and views to automate core business workflows.
+  • Performed database performance tuning through execution-plan analysis, index optimization, and query restructuring across large relational databases.
+
+EDUCATION & ACADEMIC CREDENTIALS
+--------------------------------------------------------------------------
+• Master of Science in Computer Science (MSCS) — Virtual University, Islamabad (2017) [Details: CGPA: 3.65 / 4.0]
+• Post Graduate Diploma in Islamic Banking & Finance — Karachi (2011) [Details: 2nd Position]
+• Bachelor of Commerce (B.Com) — Karachi (2010) [Details: Scored 99/100 in Statistics]
+• Dars-e-Nizami (Equivalent to M.A. Arabic & Islamic Studies) — Jamia Uloom-ul-Islamia, Allama Binnori Town (2007) [Details: Degree equivalent to M.A.]
+
+==========================================================================
+Tailored for: 8Thlightrebuild - Lead Software Engineer (Hybrid) | Verified Master Profile Reference
+==========================================================================

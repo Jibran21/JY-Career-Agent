@@ -1,0 +1,16 @@
+﻿Date: October 23, 2026
+Hiring Team, Optima Cloud Solutions (EMEA Remote)
+Re: Application for Senior Full Stack Engineer (.NET 8/9 & Angular)
+
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Senior Full Stack Engineer (.NET 8/9 & Angular) role at Optima Cloud Solutions (EMEA Remote). With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.
+
+In my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.
+
+Your opening at Optima Cloud Solutions (EMEA Remote) represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.
+
+Sincerely,
+Jibran Yousuf Khan
+jibrankhalily@gmail.com | +92 321 2351118
+Gulshan-e-Iqbal, Karachi, Pakistan

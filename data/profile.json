@@ -1,0 +1,188 @@
+{
+  "fullName": "Jibran Yousuf Khan",
+  "headline": "Data & Software Engineer | .NET • Angular • Data • AI",
+  "location": "Gulshan-e-Iqbal, Karachi, Pakistan",
+  "email": "jibrankhalily@gmail.com",
+  "phone": "+92 321 2351118",
+  "summary": "Versatile Data & Software Engineer with approximately 10 years of experience in .NET Core, Angular, MS SQL Server, SSIS, and Power BI. Experienced in delivering RESTful APIs, ETL pipelines, real-time messaging, and enterprise BI solutions across FinTech, Healthcare, and ERP domains. Also developing expertise in AI-agent architecture, LLM integration, tool/function calling, RAG, and agent workflows using the .NET ecosystem.",
+  "targetRoles": [
+    "Senior .NET Developer",
+    "Senior .NET Core / ASP.NET Core Developer",
+    "Senior Angular Developer",
+    "Senior .NET and Angular Full-Stack Developer",
+    "Senior Software Engineer",
+    "C# Developer",
+    "Technical Lead",
+    "SQL Server / SSIS / Data Engineer",
+    "Power BI / Business Intelligence Developer",
+    "FinTech / Digital Banking Software Engineer",
+    "ERP Software Engineer",
+    "AI Application Developer / AI Agent Developer"
+  ],
+  "preferredLocations": [
+    "Karachi, Pakistan",
+    "Remote (Pakistan-eligible)",
+    "Islamabad and Rawalpindi",
+    "Lahore",
+    "Other Pakistani cities",
+    "International remote or relocation opportunities"
+  ],
+  "skills": {
+    "languagesAndFrameworks": [
+      "C#",
+      "VB.NET",
+      ".NET Core",
+      ".NET Framework",
+      "ASP.NET MVC",
+      "ASP.NET Web API",
+      "Web Forms",
+      "WinForms",
+      "Angular",
+      "AngularJS",
+      "TypeScript",
+      "Node.js",
+      "React.js",
+      "Bootstrap",
+      "Ant Design (Ant Zorro)",
+      "HTML5/CSS3"
+    ],
+    "databaseAndReporting": [
+      "MS SQL Server",
+      "Entity Framework / EF Core",
+      "ADO.NET",
+      "N-Hibernate",
+      "SSIS",
+      "SSRS",
+      "Power BI",
+      "Crystal Reports",
+      "DevExpress",
+      "Telerik",
+      "iTextSharp"
+    ],
+    "architectureAndMessaging": [
+      "Clean Architecture",
+      "Layered Architecture",
+      "RESTful APIs",
+      "Web Services",
+      "SignalR",
+      "Firebase Cloud Messaging (FCM)"
+    ],
+    "aiAndAgentic": [
+      "LLM API integration",
+      "AI agents",
+      "Tool / function calling",
+      "RAG concepts",
+      "Agent memory",
+      "Workflow orchestration",
+      "Human-in-the-loop approval",
+      "Microsoft Semantic Kernel",
+      "Microsoft Agent Framework",
+      "AutoGen (exploration)"
+    ],
+    "toolsAndDevOps": [
+      "Azure DevOps",
+      "TFS",
+      "Git (GitHub / Bitbucket)",
+      "SVN",
+      "Jira",
+      "SQL Server Agent"
+    ],
+    "mobileDevelopment": [
+      "Ionic Framework (Hybrid Apps)",
+      "Java (Android Studio)"
+    ],
+    "specialties": [
+      "ETL Pipeline Architecture",
+      "Data Warehousing",
+      "Database Query Optimization",
+      "Multi-threading & Automation"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Think Enabled",
+      "title": "Senior Consultant / Senior Software Engineer",
+      "period": "Jan 2024 – Present",
+      "location": "Karachi, Pakistan",
+      "highlights": [
+        "Design, develop, and maintain enterprise software modules for Supply Chain Management and Operating Theatre (OT) operations, improving inventory tracking, procurement workflows, and clinical data management.",
+        "Build custom automation and data-processing solutions using Angular, .NET Core, and .NET Framework.",
+        "Develop high-performance, multi-threaded console applications to process large datasets efficiently, using asynchronous programming and performance-focused design.",
+        "Design, deploy, and maintain SSIS ETL pipelines feeding Power BI dashboards and executive reports; automate dataset refreshes with SQL Server Agent and SSIS packages.",
+        "Implement incremental data-loading strategies to reduce processing time and server overhead.",
+        "Architect real-time communication features using SignalR hubs and integrate Firebase Cloud Messaging (FCM) for push notifications, transactional alerts, and booking updates across Android, iOS, and web platforms.",
+        "Design and deploy interactive, paginated SSRS reports backed by complex SQL Server stored procedures and views for business intelligence and analytics.",
+        "Improve API and database performance through asynchronous programming, query tuning, strategic caching, and Entity Framework Core schema migrations.",
+        "Apply Clean Architecture and layered design patterns to improve maintainability, reusability, and testability.",
+        "Lead technical design and architectural planning for KKT International healthcare ERP solutions."
+      ]
+    },
+    {
+      "company": "Aion Digital",
+      "title": "Software Engineer",
+      "period": "Mar 2021 – Dec 2023",
+      "location": "Karachi, Pakistan",
+      "highlights": [
+        "Engineered digital banking solutions for Retail, Corporate, and Internet Banking using .NET MVC, Node.js, and Angular.",
+        "Developed secure, high-concurrency RESTful APIs powering core financial workflows.",
+        "Built responsive, accessible user interfaces using Angular Material and Bootstrap."
+      ]
+    },
+    {
+      "company": "Out2Sol",
+      "title": "Team Lead",
+      "period": "Oct 2019 – Feb 2021",
+      "location": "Karachi, Pakistan",
+      "highlights": [
+        "Led cross-functional mobile development delivering cross-platform iOS and Android applications using Ionic Framework.",
+        "Architected AngularJS single-page applications, developing custom directives, services, and modular UI components to improve user experience and efficiency."
+      ]
+    },
+    {
+      "company": "Smart Works Systems",
+      "title": "ERP Developer",
+      "period": "Sep 2015 – Oct 2019",
+      "location": "Karachi, Pakistan",
+      "highlights": [
+        "Authored complex T-SQL queries, stored procedures, triggers, and views to automate core business workflows.",
+        "Performed database performance tuning through execution-plan analysis, index optimization, and query restructuring across large relational databases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science (MSCS)",
+      "institution": "Virtual University, Islamabad",
+      "year": "2017",
+      "details": "CGPA: 3.65 / 4.0"
+    },
+    {
+      "degree": "Post Graduate Diploma in Islamic Banking & Finance",
+      "institution": "Karachi",
+      "year": "2011",
+      "details": "2nd Position"
+    },
+    {
+      "degree": "Bachelor of Commerce (B.Com)",
+      "institution": "Karachi",
+      "year": "2010",
+      "details": "Scored 99/100 in Statistics"
+    },
+    {
+      "degree": "Dars-e-Nizami (Equivalent to M.A. Arabic & Islamic Studies)",
+      "institution": "Jamia Uloom-ul-Islamia, Allama Binnori Town",
+      "year": "2007",
+      "details": "Degree equivalent to M.A."
+    }
+  ],
+  "screeningAnswers": {
+    "workAuthorization": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+    "noticePeriod": "1 Month (30 days)",
+    "currentLocation": "Karachi, Pakistan",
+    "willingToRelocate": "Yes, open to relocation for eligible international or national opportunities with visa/relocation assistance.",
+    "remotePreference": "Open to fully remote, hybrid in Karachi/Pakistan, or on-site.",
+    "targetCompensation": "Negotiable based on role scope, seniority, and geographic compensation benchmark.",
+    "yearsOfExperience": "Approximately 10 years of professional software engineering and data engineering experience."
+  },
+  "masterCvPath": "cv/master-cv/Jibran_Yousuf_Khan_CV.txt"
+}

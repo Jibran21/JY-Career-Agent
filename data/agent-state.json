@@ -1,0 +1,15 @@
+{
+  "status": "Idle",
+  "lastRunStartTime": "2026-10-26T04:00:00.0030791Z",
+  "lastRunEndTime": "2026-10-26T04:00:30.0599795Z",
+  "lastRunStatus": "Completed",
+  "nextScheduledRun": "2026-10-27T04:00:00Z",
+  "currentJobIndex": 0,
+  "totalJobsFoundToday": 342,
+  "uniqueJobsFoundToday": 307,
+  "matchedJobsToday": 4,
+  "applicationsSubmittedToday": 27,
+  "applicationsPendingToday": 0,
+  "applicationsFailedToday": 0,
+  "lastCorrelationId": "078a8ed40be048f6b0e6079bc910bc61"
+}

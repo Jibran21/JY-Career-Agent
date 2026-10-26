@@ -1,0 +1,77 @@
+{
+  "operatingMode": "ApprovalRequired",
+  "maxDailyApplications": 50,
+  "matchWeights": {
+    "dotNetWeight": 25,
+    "angularWeight": 20,
+    "seniorityWeight": 20,
+    "sqlWeight": 15,
+    "industryWeight": 10,
+    "locationWeight": 10
+  },
+  "thresholds": {
+    "highPriority": 80,
+    "approvalQueue": 65
+  },
+  "searchKeywords": [
+    "Senior .NET Developer",
+    "Senior .NET Core Developer",
+    "ASP.NET Core Developer",
+    "Senior Angular Developer",
+    ".NET Angular Developer",
+    "Full Stack .NET Developer",
+    "Senior Software Engineer",
+    "C# Developer",
+    "Technical Lead .NET",
+    "SQL Server Developer",
+    "SSIS Developer",
+    "Data Engineer",
+    "Power BI Developer",
+    "FinTech Software Engineer",
+    "Digital Banking Developer",
+    "ERP Developer",
+    "AI Application Developer",
+    "AI Agent Developer",
+    "LLM Application Developer"
+  ],
+  "searchLocations": [
+    "Karachi",
+    "Pakistan",
+    "Remote",
+    "Islamabad",
+    "Rawalpindi",
+    "Lahore"
+  ],
+  "schedule": {
+    "scheduledTime": "09:00:00",
+    "timeZoneId": "Asia/Karachi",
+    "enabled": true
+  },
+  "email": {
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "senderEmail": "jyrihlaservice@gmail.com",
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587,
+    "enableSsl": true,
+    "dailyReportEnabled": true,
+    "errorAlertsEnabled": true,
+    "immediateAlertOnSubmission": true
+  },
+  "ai": {
+    "provider": "TemplateEngine",
+    "model": "gpt-4o-mini",
+    "temperature": 0.2
+  },
+  "sources": [
+    { "name": "Remotive", "enabled": true, "type": "Api" },
+    { "name": "Arbeitnow", "enabled": true, "type": "Api" },
+    { "name": "Jobicy", "enabled": true, "type": "Api" },
+    { "name": "Rozee", "enabled": true, "type": "Feed" },
+    { "name": "LinkedIn", "enabled": true, "type": "ApprovalAssisted" },
+    { "name": "Indeed", "enabled": true, "type": "ApprovalAssisted" }
+  ],
+  "backup": {
+    "backupBeforeRun": true,
+    "maxBackupsToKeep": 30
+  }
+}

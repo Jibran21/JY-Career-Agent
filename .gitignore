@@ -1,0 +1,51 @@
+# ========================================================
+# JY Career Agent - Git Ignore Rules
+# ========================================================
+
+# --- Environment & Sensitive Credentials ---
+**/.env
+**/.env.*
+!**/.env.example
+*.local
+
+# --- Visual Studio & IDEs ---
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# --- .NET Build & Output Artifacts ---
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+*.tmp
+*.temp
+
+# --- Node / Angular Frontend Artifacts ---
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.angular/
+**/.angular/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Diagnostics, Logs & Scratch ---
+logs/
+*.log
+scratch/
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+desktop.ini

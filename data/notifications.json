@@ -1,0 +1,11 @@
+[
+  {
+    "id": "notif-smtp-verified",
+    "timestampUtc": "2026-10-23T16:03:45Z",
+    "title": "Email Integration Verified",
+    "message": "Gmail SMTP connection with jyrihlaservice@gmail.com and Google App Password tested and verified! Test email delivered to jibrankhalily@gmail.com with status 2.0.0 OK.",
+    "severity": "Success",
+    "isRead": false,
+    "actionUrl": "/reports"
+  }
+]

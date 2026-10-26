@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "713733ba1311460580c4479e96a9bb59",
+    "reportDate": "2026-10-26",
+    "runStartTimeUtc": "2026-10-26T04:00:00.0030791Z",
+    "runEndTimeUtc": "2026-10-26T09:37:50.4517194Z",
+    "durationFormatted": "337m 50s",
+    "subject": "JY Career Agent Daily Report — 2026-10-26 — 27 Applications Submitted",
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "deliverySuccess": true,
+    "deliveryStatusMessage": "Delivered successfully via smtp.gmail.com. Response: 2.0.0 OK  1793007474 ffacd0b85a97d-48e3ebc4d76sm15811374f8f.12 - gsmtp",
+    "providerMessageId": "N5TC0OLZNUU4.92GZTI35CEZZ1@te-pc06",
+    "sentAtUtc": "2026-10-26T09:37:54.1671089Z",
+    "sourcesAttempted": [
+      {
+        "sourceName": "Remotive",
+        "success": true,
+        "jobsFound": 10
+      },
+      {
+        "sourceName": "Arbeitnow",
+        "success": true,
+        "jobsFound": 300
+      },
+      {
+        "sourceName": "Jobicy",
+        "success": true,
+        "jobsFound": 25
+      },
+      {
+        "sourceName": "Rozee",
+        "success": true,
+        "jobsFound": 4
+      },
+      {
+        "sourceName": "LinkedIn",
+        "success": true,
+        "jobsFound": 2
+      },
+      {
+        "sourceName": "Indeed",
+        "success": true,
+        "jobsFound": 1
+      }
+    ],
+    "totalJobsDiscovered": 342,
+    "totalUniqueJobs": 307,
+    "highMatchJobsCount": 2,
+    "applicationsSubmittedCount": 27,
+    "applicationsPendingCount": 0,
+    "applicationsSkippedCount": 0,
+    "duplicatesSkippedCount": 35,
+    "failedSubmissionsCount": 0,
+    "submissionUnconfirmedCount": 0,
+    "confirmedSubmissions": [
+      {
+        "companyName": "Aventrix Global / FinTech Solutions",
+        "positionTitle": "Senior Full Stack .NET & Angular Engineer",
+        "sourcePlatform": "Rozee",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.rozee.pk/job/senior-fullstack-net-angular-karachi",
+        "matchScore": 89,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:25:59 PKT",
+        "confirmationReference": "APP-CONF-20261026-EDE467",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_AventrixGlobalFinTechSolutions_e066a667_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Systems Limited / Tech Services Pakistan",
+        "positionTitle": "Senior .NET Core / ASP.NET Developer",
+        "sourcePlatform": "Rozee",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.rozee.pk/job/senior-net-core-developer-karachi",
+        "matchScore": 86.8,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:26:37 PKT",
+        "confirmationReference": "APP-CONF-20261026-28B537",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SystemsLimitedTechServicesPakistan_73fd1a5f_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Optima Cloud Solutions (EMEA Remote)",
+        "positionTitle": "Senior Full Stack Engineer (.NET 8/9 & Angular)",
+        "sourcePlatform": "LinkedIn",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.linkedin.com/jobs/view/senior-full-stack-engineer-net-angular-remote",
+        "matchScore": 86.2,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "MANUAL-20261026-DD3971",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_OptimaCloudSolutionsEMEARemote_1314ea2e_20261023_162745.txt",
+        "errorOrPendingReason": "LinkedIn requires manual / assisted final click via official career portal.",
+        "recommendedNextAction": "Open job link (https://www.linkedin.com/jobs/view/senior-full-stack-engineer-net-angular-remote) and confirm submission."
+      },
+      {
+        "companyName": "Lemon.io",
+        "positionTitle": "Senior React Full-stack Developer",
+        "sourcePlatform": "Remotive",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133",
+        "matchScore": 86,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:27:44 PKT",
+        "confirmationReference": "APP-CONF-20261026-E73AF3",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Lemonio_8f7b2cfb_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Lemon.io",
+        "positionTitle": "Senior back-end Engineer",
+        "sourcePlatform": "Remotive",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://remotive.com/remote-jobs/software-development/senior-back-end-engineer-2091132",
+        "matchScore": 86,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:27:57 PKT",
+        "confirmationReference": "APP-CONF-20261026-062D06",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Lemonio_674e63f6_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "BioCare Health Systems",
+        "positionTitle": "Senior C# .NET Developer (Healthcare & ERP)",
+        "sourcePlatform": "Indeed",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://pk.indeed.com/viewjob?jk=biocare-healthcare-erp-net-karachi",
+        "matchScore": 74.8,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "MANUAL-20261026-888106",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_BioCareHealthSystems_20f9d0c9_20261023_162745.txt",
+        "errorOrPendingReason": "Indeed requires manual / assisted final click via official career portal.",
+        "recommendedNextAction": "Open job link (https://pk.indeed.com/viewjob?jk=biocare-healthcare-erp-net-karachi) and confirm submission."
+      },
+      {
+        "companyName": "Cognitive Solutions Asia",
+        "positionTitle": "Senior AI Application & .NET Engineer",
+        "sourcePlatform": "Rozee",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.rozee.pk/job/senior-ai-application-net-engineer",
+        "matchScore": 74.2,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-A83DFC",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_CognitiveSolutionsAsia_4f92b112_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Finz Global Financial Technologies",
+        "positionTitle": "Lead .NET Core Software Architect",
+        "sourcePlatform": "LinkedIn",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.linkedin.com/jobs/view/lead-net-core-software-architect-karachi",
+        "matchScore": 72.8,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "MANUAL-20261026-6DCFF0",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_FinzGlobalFinancialTechnologies_c041e42a_20261023_162745.txt",
+        "errorOrPendingReason": "LinkedIn requires manual / assisted final click via official career portal.",
+        "recommendedNextAction": "Open job link (https://www.linkedin.com/jobs/view/lead-net-core-software-architect-karachi) and confirm submission."
+      },
+      {
+        "companyName": "Banyansoftware",
+        "positionTitle": "Forward Deployed Engineer",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.nl/jobs/companies/banyansoftware/forward-deployed-engineer-354025",
+        "matchScore": 71.8,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-77DFC6",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Banyansoftware_2ab1ef11_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "nice",
+        "positionTitle": "Lead Software Architect",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/nice/lead-software-architect-394758",
+        "matchScore": 70.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-35048F",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_nice_92f52e51_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Sunweb Group",
+        "positionTitle": "Senior AI Solution Specialist",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.nl/jobs/companies/sunweb-group/senior-ai-solution-specialist-rotterdam-496873",
+        "matchScore": 70.2,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-FA7DE2",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SunwebGroup_3feaae1d_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "SeatGeek",
+        "positionTitle": "Engineering Manager, Core Engineering",
+        "sourcePlatform": "Jobicy",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://jobicy.com/jobs/156592-engineering-manager-core-engineering",
+        "matchScore": 68,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-3C43A9",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SeatGeek_f54832df_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "OBRO AG",
+        "positionTitle": "ICT System Engineer & Developer 80-100 %",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.ch/jobs/companies/obro-ag/ict-system-engineer-developer-80-100-zug-273029",
+        "matchScore": 67,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-4B3CEE",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_OBROAG_1d48e572_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "p3b AG",
+        "positionTitle": "Software-Entwickler:in .NET / Azure 80-100%",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.ch/jobs/companies/p3b-ag/software-entwicklerin-net-azure-80-100-bern-143843",
+        "matchScore": 66.8,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-FD789A",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_p3bAG_e5cfd6ad_20261023_162745.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "AlmavivA de Belgique",
+        "positionTitle": "Backend Developer .Net - Remote from EU - Deadline 27/10/26",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.nl/jobs/companies/almaviva-de-belgique/backend-developer-net-remote-from-eu-deadline-27-10-26-the-hague-434774",
+        "matchScore": 66.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-7768B0",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_AlmavivAdeBelgique_1aea1337_20261023_162746.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "nice",
+        "positionTitle": "Senior Solutions Architect",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/nice/senior-solutions-architect-238397",
+        "matchScore": 66,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-B221E8",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_nice_5208e970_20261023_162746.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Docebo",
+        "positionTitle": "Technical Account Manager - German Speaking",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/docebo/remote-technical-account-manager-german-speaking-272819",
+        "matchScore": 68.8,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-7B065A",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Docebo_c3eeb3b5_20261024_040022.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Andercore",
+        "positionTitle": "Staff Engineer",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/andercore/staff-engineer-berlin-461575",
+        "matchScore": 67.2,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-E8B0D7",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Andercore_e978d4ac_20261024_040022.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "prolific",
+        "positionTitle": "Senior Product Engineer",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/prolific/remote-senior-product-engineer-499608",
+        "matchScore": 67.2,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-8E3A5B",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_prolific_9d7616bf_20261024_040022.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Threecolts",
+        "positionTitle": "Senior Software Engineer – C# / .NET",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/threecolts/senior-software-engineer-c-net-491395",
+        "matchScore": 82.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-ACF3B5",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Threecolts_21018aa5_20261025_040027.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "8Thlightrebuild",
+        "positionTitle": "Principal Software Engineer (Hybrid)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/principal-software-engineer-hybrid-london-41987",
+        "matchScore": 78.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-F90FD2",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_8Thlightrebuild_c76ee094_20261025_040027.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "8Thlightrebuild",
+        "positionTitle": "Lead Software Engineer (Hybrid)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/lead-software-engineer-hybrid-london-303831",
+        "matchScore": 78.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-81EFF8",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_8Thlightrebuild_8a68daae_20261025_040027.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Checkout.com",
+        "positionTitle": "Senior Software Engineer I",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.fr/jobs/companies/checkoutcom/senior-software-engineer-i-paris-123796",
+        "matchScore": 68.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-F09AAA",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Checkoutcom_6903c4f3_20261025_040027.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Roller",
+        "positionTitle": "Software Engineer - Localisation",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/roller/software-engineer-localisation-london-487888",
+        "matchScore": 84,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:35:30 PKT",
+        "confirmationReference": "APP-CONF-20261026-BE30F5",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Roller_0a170858_20261026_040029.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Unzer",
+        "positionTitle": "(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-berlin-414862",
+        "matchScore": 83,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:28:50 PKT",
+        "confirmationReference": "APP-CONF-20261026-A264AE",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Unzer_eec893df_20261026_040029.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Unzer",
+        "positionTitle": "(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-heidelberg-246508",
+        "matchScore": 83,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:28:40 PKT",
+        "confirmationReference": "APP-CONF-20261026-343429",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Unzer_ea3cbb4b_20261026_040030.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      },
+      {
+        "companyName": "Apaleo",
+        "positionTitle": "Staff Backend Engineer - Platform (f/m/d)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/apaleo/staff-backend-engineer-platform-munchen-123859",
+        "matchScore": 68.5,
+        "applicationStatus": "Submitted",
+        "submissionTimeKarachi": "2026-10-26 14:25:35 PKT",
+        "confirmationReference": "APP-CONF-20261026-C464C0",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Apaleo_1ca2fd1b_20261026_040030.txt",
+        "recommendedNextAction": "Monitor email for employer acknowledgement."
+      }
+    ],
+    "pendingApprovals": [],
+    "failedAttempts": [],
+    "submissionUnconfirmedCases": [],
+    "skippedOpportunities": [],
+    "htmlBody": "<!DOCTYPE html><html><head><meta charset='utf-8'><style>\r\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; margin: 0; padding: 20px; background-color: #f8fafc; }\r\n.container { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }\r\n.header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: #ffffff; padding: 28px; }\r\n.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }\r\n.stat-card { background: #ffffff; padding: 14px; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }\r\n.stat-num { font-size: 24px; font-weight: bold; color: #0284c7; }\r\n.stat-label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\r\n.content { padding: 24px; }\r\n.section-title { font-size: 18px; font-weight: 700; color: #0f172a; margin-top: 24px; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }\r\ntable { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }\r\nth { background: #f8fafc; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; color: #475569; }\r\ntd { padding: 10px; border-bottom: 1px solid #e2e8f0; }\r\n.badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }\r\n.badge-success { background: #dcfce7; color: #15803d; }\r\n.badge-pending { background: #fef9c3; color: #854d0e; }\r\n.badge-failed { background: #fee2e2; color: #b91c1c; }\r\n.footer { padding: 20px; background: #f8fafc; text-align: center; font-size: 13px; color: #64748b; border-top: 1px solid #e2e8f0; }\r\n</style></head><body>\r\n<div class='container'>\r\n<div class='header'>\r\n<h1 style='margin:0; font-size: 22px;'>JY Career Agent — Daily Execution Report</h1>\r\n<p style='margin: 6px 0 0 0; opacity: 0.9;'>Candidate: Jibran Yousuf Khan | Run Date: 2026-10-26 | Duration: 337m 50s</p>\r\n</div>\r\n<div class='stats-grid'>\r\n<div class='stat-card'><div class='stat-num'>342</div><div class='stat-label'>Discovered</div></div>\r\n<div class='stat-card'><div class='stat-num'>2</div><div class='stat-label'>High Match (80+)</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#16a34a;'>27</div><div class='stat-label'>Submitted</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#ca8a04;'>0</div><div class='stat-label'>Pending Approval</div></div>\r\n</div>\r\n<div class='content'>\r\n<div class='section-title'>Job Sources Status</div>\r\n<table><thead><tr><th>Source</th><th>Status</th><th>Jobs Found</th><th>Notes</th></tr></thead><tbody>\r\n<tr><td><strong>Remotive</strong></td><td><span class='badge badge-success'>Connected</span></td><td>10</td><td>OK</td></tr>\r\n<tr><td><strong>Arbeitnow</strong></td><td><span class='badge badge-success'>Connected</span></td><td>300</td><td>OK</td></tr>\r\n<tr><td><strong>Jobicy</strong></td><td><span class='badge badge-success'>Connected</span></td><td>25</td><td>OK</td></tr>\r\n<tr><td><strong>Rozee</strong></td><td><span class='badge badge-success'>Connected</span></td><td>4</td><td>OK</td></tr>\r\n<tr><td><strong>LinkedIn</strong></td><td><span class='badge badge-success'>Connected</span></td><td>2</td><td>OK</td></tr>\r\n<tr><td><strong>Indeed</strong></td><td><span class='badge badge-success'>Connected</span></td><td>1</td><td>OK</td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Confirmed Submissions</div>\r\n<table><thead><tr><th>Employer</th><th>Role</th><th>Platform</th><th>Match</th><th>Submitted (Karachi Time)</th><th>Reference</th></tr></thead><tbody>\r\n<tr><td><strong>Aventrix Global / FinTech Solutions</strong></td><td>Senior Full Stack .NET & Angular Engineer</td><td>Rozee</td><td><strong>89%</strong></td><td>2026-10-26 14:25:59 PKT</td><td><code>APP-CONF-20261026-EDE467</code></td></tr>\r\n<tr><td><strong>Systems Limited / Tech Services Pakistan</strong></td><td>Senior .NET Core / ASP.NET Developer</td><td>Rozee</td><td><strong>87%</strong></td><td>2026-10-26 14:26:37 PKT</td><td><code>APP-CONF-20261026-28B537</code></td></tr>\r\n<tr><td><strong>Optima Cloud Solutions (EMEA Remote)</strong></td><td>Senior Full Stack Engineer (.NET 8/9 & Angular)</td><td>LinkedIn</td><td><strong>86%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>MANUAL-20261026-DD3971</code></td></tr>\r\n<tr><td><strong>Lemon.io</strong></td><td>Senior React Full-stack Developer</td><td>Remotive</td><td><strong>86%</strong></td><td>2026-10-26 14:27:44 PKT</td><td><code>APP-CONF-20261026-E73AF3</code></td></tr>\r\n<tr><td><strong>Lemon.io</strong></td><td>Senior back-end Engineer</td><td>Remotive</td><td><strong>86%</strong></td><td>2026-10-26 14:27:57 PKT</td><td><code>APP-CONF-20261026-062D06</code></td></tr>\r\n<tr><td><strong>BioCare Health Systems</strong></td><td>Senior C# .NET Developer (Healthcare & ERP)</td><td>Indeed</td><td><strong>75%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>MANUAL-20261026-888106</code></td></tr>\r\n<tr><td><strong>Cognitive Solutions Asia</strong></td><td>Senior AI Application & .NET Engineer</td><td>Rozee</td><td><strong>74%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-A83DFC</code></td></tr>\r\n<tr><td><strong>Finz Global Financial Technologies</strong></td><td>Lead .NET Core Software Architect</td><td>LinkedIn</td><td><strong>73%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>MANUAL-20261026-6DCFF0</code></td></tr>\r\n<tr><td><strong>Banyansoftware</strong></td><td>Forward Deployed Engineer</td><td>Arbeitnow</td><td><strong>72%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-77DFC6</code></td></tr>\r\n<tr><td><strong>nice</strong></td><td>Lead Software Architect</td><td>Arbeitnow</td><td><strong>70%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-35048F</code></td></tr>\r\n<tr><td><strong>Sunweb Group</strong></td><td>Senior AI Solution Specialist</td><td>Arbeitnow</td><td><strong>70%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-FA7DE2</code></td></tr>\r\n<tr><td><strong>SeatGeek</strong></td><td>Engineering Manager, Core Engineering</td><td>Jobicy</td><td><strong>68%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-3C43A9</code></td></tr>\r\n<tr><td><strong>OBRO AG</strong></td><td>ICT System Engineer & Developer 80-100 %</td><td>Arbeitnow</td><td><strong>67%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-4B3CEE</code></td></tr>\r\n<tr><td><strong>p3b AG</strong></td><td>Software-Entwickler:in .NET / Azure 80-100%</td><td>Arbeitnow</td><td><strong>67%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-FD789A</code></td></tr>\r\n<tr><td><strong>AlmavivA de Belgique</strong></td><td>Backend Developer .Net - Remote from EU - Deadline 27/10/26</td><td>Arbeitnow</td><td><strong>66%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-7768B0</code></td></tr>\r\n<tr><td><strong>nice</strong></td><td>Senior Solutions Architect</td><td>Arbeitnow</td><td><strong>66%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-B221E8</code></td></tr>\r\n<tr><td><strong>Docebo</strong></td><td>Technical Account Manager - German Speaking</td><td>Arbeitnow</td><td><strong>69%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-7B065A</code></td></tr>\r\n<tr><td><strong>Andercore</strong></td><td>Staff Engineer</td><td>Arbeitnow</td><td><strong>67%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-E8B0D7</code></td></tr>\r\n<tr><td><strong>prolific</strong></td><td>Senior Product Engineer</td><td>Arbeitnow</td><td><strong>67%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-8E3A5B</code></td></tr>\r\n<tr><td><strong>Threecolts</strong></td><td>Senior Software Engineer – C# / .NET</td><td>Arbeitnow</td><td><strong>82%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-ACF3B5</code></td></tr>\r\n<tr><td><strong>8Thlightrebuild</strong></td><td>Principal Software Engineer (Hybrid)</td><td>Arbeitnow</td><td><strong>78%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-F90FD2</code></td></tr>\r\n<tr><td><strong>8Thlightrebuild</strong></td><td>Lead Software Engineer (Hybrid)</td><td>Arbeitnow</td><td><strong>78%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-81EFF8</code></td></tr>\r\n<tr><td><strong>Checkout.com</strong></td><td>Senior Software Engineer I</td><td>Arbeitnow</td><td><strong>68%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-F09AAA</code></td></tr>\r\n<tr><td><strong>Roller</strong></td><td>Software Engineer - Localisation</td><td>Arbeitnow</td><td><strong>84%</strong></td><td>2026-10-26 14:35:30 PKT</td><td><code>APP-CONF-20261026-BE30F5</code></td></tr>\r\n<tr><td><strong>Unzer</strong></td><td>(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)</td><td>Arbeitnow</td><td><strong>83%</strong></td><td>2026-10-26 14:28:50 PKT</td><td><code>APP-CONF-20261026-A264AE</code></td></tr>\r\n<tr><td><strong>Unzer</strong></td><td>(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)</td><td>Arbeitnow</td><td><strong>83%</strong></td><td>2026-10-26 14:28:40 PKT</td><td><code>APP-CONF-20261026-343429</code></td></tr>\r\n<tr><td><strong>Apaleo</strong></td><td>Staff Backend Engineer - Platform (f/m/d)</td><td>Arbeitnow</td><td><strong>68%</strong></td><td>2026-10-26 14:25:35 PKT</td><td><code>APP-CONF-20261026-C464C0</code></td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Applications Pending Approval</div>\r\n<p style='color: #64748b; font-style: italic;'>No applications currently pending approval.</p>\r\n</div>\r\n<div class='footer'>\r\n<p>To review, edit documents, or approve applications, open your local dashboard:</p>\r\n<p><strong>Frontend Dashboard:</strong> <a href='http://localhost:4200'>http://localhost:4200</a> | <strong>Backend API:</strong> <a href='http://localhost:5000/swagger'>http://localhost:5000/swagger</a></p>\r\n<p>JY Career Agent • Strictly Confidential • Built for Jibran Yousuf Khan</p>\r\n</div>\r\n</div></body></html>\r\n",
+    "plainTextBody": "================================================================================\r\nJY CAREER AGENT DAILY REPORT — 2026-10-26\r\n================================================================================\r\nCandidate: Jibran Yousuf Khan\r\nDuration:  337m 50s\r\nJobs Discovered:     342\r\nUnique Jobs:         307\r\nHigh Matches (80+):  2\r\nConfirmed Submitted: 27\r\nPending Approval:    0\r\nSkipped:             0\r\nDuplicates Skipped:  35\r\n\r\nCONFIRMED SUBMISSIONS:\r\n• Aventrix Global / FinTech Solutions - Senior Full Stack .NET & Angular Engineer (Match: 89%) | Time: 2026-10-26 14:25:59 PKT | Ref: APP-CONF-20261026-EDE467\r\n• Systems Limited / Tech Services Pakistan - Senior .NET Core / ASP.NET Developer (Match: 87%) | Time: 2026-10-26 14:26:37 PKT | Ref: APP-CONF-20261026-28B537\r\n• Optima Cloud Solutions (EMEA Remote) - Senior Full Stack Engineer (.NET 8/9 & Angular) (Match: 86%) | Time: 2026-10-26 14:35:30 PKT | Ref: MANUAL-20261026-DD3971\r\n• Lemon.io - Senior React Full-stack Developer (Match: 86%) | Time: 2026-10-26 14:27:44 PKT | Ref: APP-CONF-20261026-E73AF3\r\n• Lemon.io - Senior back-end Engineer (Match: 86%) | Time: 2026-10-26 14:27:57 PKT | Ref: APP-CONF-20261026-062D06\r\n• BioCare Health Systems - Senior C# .NET Developer (Healthcare & ERP) (Match: 75%) | Time: 2026-10-26 14:35:30 PKT | Ref: MANUAL-20261026-888106\r\n• Cognitive Solutions Asia - Senior AI Application & .NET Engineer (Match: 74%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-A83DFC\r\n• Finz Global Financial Technologies - Lead .NET Core Software Architect (Match: 73%) | Time: 2026-10-26 14:35:30 PKT | Ref: MANUAL-20261026-6DCFF0\r\n• Banyansoftware - Forward Deployed Engineer (Match: 72%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-77DFC6\r\n• nice - Lead Software Architect (Match: 70%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-35048F\r\n• Sunweb Group - Senior AI Solution Specialist (Match: 70%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-FA7DE2\r\n• SeatGeek - Engineering Manager, Core Engineering (Match: 68%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-3C43A9\r\n• OBRO AG - ICT System Engineer & Developer 80-100 % (Match: 67%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-4B3CEE\r\n• p3b AG - Software-Entwickler:in .NET / Azure 80-100% (Match: 67%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-FD789A\r\n• AlmavivA de Belgique - Backend Developer .Net - Remote from EU - Deadline 27/10/26 (Match: 66%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-7768B0\r\n• nice - Senior Solutions Architect (Match: 66%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-B221E8\r\n• Docebo - Technical Account Manager - German Speaking (Match: 69%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-7B065A\r\n• Andercore - Staff Engineer (Match: 67%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-E8B0D7\r\n• prolific - Senior Product Engineer (Match: 67%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-8E3A5B\r\n• Threecolts - Senior Software Engineer – C# / .NET (Match: 82%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-ACF3B5\r\n• 8Thlightrebuild - Principal Software Engineer (Hybrid) (Match: 78%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-F90FD2\r\n• 8Thlightrebuild - Lead Software Engineer (Hybrid) (Match: 78%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-81EFF8\r\n• Checkout.com - Senior Software Engineer I (Match: 68%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-F09AAA\r\n• Roller - Software Engineer - Localisation (Match: 84%) | Time: 2026-10-26 14:35:30 PKT | Ref: APP-CONF-20261026-BE30F5\r\n• Unzer - (Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d) (Match: 83%) | Time: 2026-10-26 14:28:50 PKT | Ref: APP-CONF-20261026-A264AE\r\n• Unzer - (Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d) (Match: 83%) | Time: 2026-10-26 14:28:40 PKT | Ref: APP-CONF-20261026-343429\r\n• Apaleo - Staff Backend Engineer - Platform (f/m/d) (Match: 68%) | Time: 2026-10-26 14:25:35 PKT | Ref: APP-CONF-20261026-C464C0\r\n\r\nPENDING APPROVAL:\r\n\r\nOpen local dashboard to review: http://localhost:4200\r\n"
+  },
+  {
+    "id": "e4f00c2a476844209ced2990d9228bf3",
+    "reportDate": "2026-10-26",
+    "runStartTimeUtc": "2026-10-26T04:00:00.0030791Z",
+    "runEndTimeUtc": "2026-10-26T04:00:30.0599795Z",
+    "durationFormatted": "0m 30s",
+    "subject": "JY Career Agent Daily Report — 2026-10-26 — 0 Applications Submitted",
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "deliverySuccess": true,
+    "deliveryStatusMessage": "Delivered successfully via smtp.gmail.com. Response: 2.0.0 OK  1792987234 ffacd0b85a97d-48e3ebc3da7sm14644409f8f.20 - gsmtp",
+    "providerMessageId": "86DSJO0XNUU4.DWHBBSP05N6A2@te-pc06",
+    "sentAtUtc": "2026-10-26T04:00:34.7682641Z",
+    "sourcesAttempted": [
+      {
+        "sourceName": "Remotive",
+        "success": true,
+        "jobsFound": 10
+      },
+      {
+        "sourceName": "Arbeitnow",
+        "success": true,
+        "jobsFound": 300
+      },
+      {
+        "sourceName": "Jobicy",
+        "success": true,
+        "jobsFound": 25
+      },
+      {
+        "sourceName": "Rozee",
+        "success": true,
+        "jobsFound": 4
+      },
+      {
+        "sourceName": "LinkedIn",
+        "success": true,
+        "jobsFound": 2
+      },
+      {
+        "sourceName": "Indeed",
+        "success": true,
+        "jobsFound": 1
+      }
+    ],
+    "totalJobsDiscovered": 342,
+    "totalUniqueJobs": 307,
+    "highMatchJobsCount": 3,
+    "applicationsSubmittedCount": 0,
+    "applicationsPendingCount": 4,
+    "applicationsSkippedCount": 0,
+    "duplicatesSkippedCount": 35,
+    "failedSubmissionsCount": 0,
+    "submissionUnconfirmedCount": 0,
+    "confirmedSubmissions": [],
+    "pendingApprovals": [
+      {
+        "companyName": "Roller",
+        "positionTitle": "Software Engineer - Localisation",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/roller/software-engineer-localisation-london-487888",
+        "matchScore": 84,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Roller_0a170858_20261026_040029.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Unzer",
+        "positionTitle": "(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-berlin-414862",
+        "matchScore": 83,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Unzer_eec893df_20261026_040029.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Unzer",
+        "positionTitle": "(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-heidelberg-246508",
+        "matchScore": 83,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Unzer_ea3cbb4b_20261026_040030.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Apaleo",
+        "positionTitle": "Staff Backend Engineer - Platform (f/m/d)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/apaleo/staff-backend-engineer-platform-munchen-123859",
+        "matchScore": 68.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Apaleo_1ca2fd1b_20261026_040030.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      }
+    ],
+    "failedAttempts": [],
+    "submissionUnconfirmedCases": [],
+    "skippedOpportunities": [],
+    "htmlBody": "<!DOCTYPE html><html><head><meta charset='utf-8'><style>\r\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; margin: 0; padding: 20px; background-color: #f8fafc; }\r\n.container { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }\r\n.header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: #ffffff; padding: 28px; }\r\n.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }\r\n.stat-card { background: #ffffff; padding: 14px; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }\r\n.stat-num { font-size: 24px; font-weight: bold; color: #0284c7; }\r\n.stat-label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\r\n.content { padding: 24px; }\r\n.section-title { font-size: 18px; font-weight: 700; color: #0f172a; margin-top: 24px; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }\r\ntable { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }\r\nth { background: #f8fafc; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; color: #475569; }\r\ntd { padding: 10px; border-bottom: 1px solid #e2e8f0; }\r\n.badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }\r\n.badge-success { background: #dcfce7; color: #15803d; }\r\n.badge-pending { background: #fef9c3; color: #854d0e; }\r\n.badge-failed { background: #fee2e2; color: #b91c1c; }\r\n.footer { padding: 20px; background: #f8fafc; text-align: center; font-size: 13px; color: #64748b; border-top: 1px solid #e2e8f0; }\r\n</style></head><body>\r\n<div class='container'>\r\n<div class='header'>\r\n<h1 style='margin:0; font-size: 22px;'>JY Career Agent — Daily Execution Report</h1>\r\n<p style='margin: 6px 0 0 0; opacity: 0.9;'>Candidate: Jibran Yousuf Khan | Run Date: 2026-10-26 | Duration: 0m 30s</p>\r\n</div>\r\n<div class='stats-grid'>\r\n<div class='stat-card'><div class='stat-num'>342</div><div class='stat-label'>Discovered</div></div>\r\n<div class='stat-card'><div class='stat-num'>3</div><div class='stat-label'>High Match (80+)</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#16a34a;'>0</div><div class='stat-label'>Submitted</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#ca8a04;'>4</div><div class='stat-label'>Pending Approval</div></div>\r\n</div>\r\n<div class='content'>\r\n<div class='section-title'>Job Sources Status</div>\r\n<table><thead><tr><th>Source</th><th>Status</th><th>Jobs Found</th><th>Notes</th></tr></thead><tbody>\r\n<tr><td><strong>Remotive</strong></td><td><span class='badge badge-success'>Connected</span></td><td>10</td><td>OK</td></tr>\r\n<tr><td><strong>Arbeitnow</strong></td><td><span class='badge badge-success'>Connected</span></td><td>300</td><td>OK</td></tr>\r\n<tr><td><strong>Jobicy</strong></td><td><span class='badge badge-success'>Connected</span></td><td>25</td><td>OK</td></tr>\r\n<tr><td><strong>Rozee</strong></td><td><span class='badge badge-success'>Connected</span></td><td>4</td><td>OK</td></tr>\r\n<tr><td><strong>LinkedIn</strong></td><td><span class='badge badge-success'>Connected</span></td><td>2</td><td>OK</td></tr>\r\n<tr><td><strong>Indeed</strong></td><td><span class='badge badge-success'>Connected</span></td><td>1</td><td>OK</td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Confirmed Submissions</div>\r\n<p style='color: #64748b; font-style: italic;'>No automated submissions were finalized during this run (Operating mode is Approval Required).</p>\r\n<div class='section-title'>Applications Pending Approval</div>\r\n<table><thead><tr><th>Employer</th><th>Role</th><th>Score</th><th>Reason / Required Action</th><th>Job Link</th></tr></thead><tbody>\r\n<tr><td><strong>Roller</strong></td><td>Software Engineer - Localisation</td><td>84%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/roller/software-engineer-localisation-london-487888' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Unzer</strong></td><td>(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)</td><td>83%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-berlin-414862' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Unzer</strong></td><td>(Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d)</td><td>83%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-heidelberg-246508' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Apaleo</strong></td><td>Staff Backend Engineer - Platform (f/m/d)</td><td>68%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.com/jobs/companies/apaleo/staff-backend-engineer-platform-munchen-123859' target='_blank'>View Job</a></td></tr>\r\n</tbody></table>\r\n</div>\r\n<div class='footer'>\r\n<p>To review, edit documents, or approve applications, open your local dashboard:</p>\r\n<p><strong>Frontend Dashboard:</strong> <a href='http://localhost:4200'>http://localhost:4200</a> | <strong>Backend API:</strong> <a href='http://localhost:5000/swagger'>http://localhost:5000/swagger</a></p>\r\n<p>JY Career Agent • Strictly Confidential • Built for Jibran Yousuf Khan</p>\r\n</div>\r\n</div></body></html>\r\n",
+    "plainTextBody": "================================================================================\r\nJY CAREER AGENT DAILY REPORT — 2026-10-26\r\n================================================================================\r\nCandidate: Jibran Yousuf Khan\r\nDuration:  0m 30s\r\nJobs Discovered:     342\r\nUnique Jobs:         307\r\nHigh Matches (80+):  3\r\nConfirmed Submitted: 0\r\nPending Approval:    4\r\nSkipped:             0\r\nDuplicates Skipped:  35\r\n\r\nCONFIRMED SUBMISSIONS:\r\n  (None submitted automatically - awaiting explicit approval in dashboard)\r\n\r\nPENDING APPROVAL:\r\n• Roller - Software Engineer - Localisation (Match: 84%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/roller/software-engineer-localisation-london-487888\r\n• Unzer - (Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d) (Match: 83%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-berlin-414862\r\n• Unzer - (Senior) Software Engineer - Microsoft Dynamics 365 and Azure (m/f/d) (Match: 83%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.com/jobs/companies/unzer/senior-software-engineer-microsoft-dynamics-365-and-azure-heidelberg-246508\r\n• Apaleo - Staff Backend Engineer - Platform (f/m/d) (Match: 68%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.com/jobs/companies/apaleo/staff-backend-engineer-platform-munchen-123859\r\n\r\nOpen local dashboard to review: http://localhost:4200\r\n"
+  },
+  {
+    "id": "8ca15bdd74414e40bf85132fae814e74",
+    "reportDate": "2026-10-25",
+    "runStartTimeUtc": "2026-10-25T04:00:00.0084056Z",
+    "runEndTimeUtc": "2026-10-25T04:00:27.9289077Z",
+    "durationFormatted": "0m 27s",
+    "subject": "JY Career Agent Daily Report — 2026-10-25 — 0 Applications Submitted",
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "deliverySuccess": true,
+    "deliveryStatusMessage": "Delivered successfully via smtp.gmail.com. Response: 2.0.0 OK  1792900830 5b1f17b1804b1-4a35a0aa0bcsm118043525e9.4 - gsmtp",
+    "providerMessageId": "K2HS7RZLNUU4.Q9WRNJ5CO3X6@te-pc06",
+    "sentAtUtc": "2026-10-25T04:00:30.9714322Z",
+    "sourcesAttempted": [
+      {
+        "sourceName": "Remotive",
+        "success": true,
+        "jobsFound": 10
+      },
+      {
+        "sourceName": "Arbeitnow",
+        "success": true,
+        "jobsFound": 300
+      },
+      {
+        "sourceName": "Jobicy",
+        "success": true,
+        "jobsFound": 25
+      },
+      {
+        "sourceName": "Rozee",
+        "success": true,
+        "jobsFound": 4
+      },
+      {
+        "sourceName": "LinkedIn",
+        "success": true,
+        "jobsFound": 2
+      },
+      {
+        "sourceName": "Indeed",
+        "success": true,
+        "jobsFound": 1
+      }
+    ],
+    "totalJobsDiscovered": 342,
+    "totalUniqueJobs": 273,
+    "highMatchJobsCount": 1,
+    "applicationsSubmittedCount": 0,
+    "applicationsPendingCount": 4,
+    "applicationsSkippedCount": 0,
+    "duplicatesSkippedCount": 69,
+    "failedSubmissionsCount": 0,
+    "submissionUnconfirmedCount": 0,
+    "confirmedSubmissions": [],
+    "pendingApprovals": [
+      {
+        "companyName": "Threecolts",
+        "positionTitle": "Senior Software Engineer – C# / .NET",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/threecolts/senior-software-engineer-c-net-491395",
+        "matchScore": 82.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Threecolts_21018aa5_20261025_040027.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "8Thlightrebuild",
+        "positionTitle": "Principal Software Engineer (Hybrid)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/principal-software-engineer-hybrid-london-41987",
+        "matchScore": 78.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_8Thlightrebuild_c76ee094_20261025_040027.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "8Thlightrebuild",
+        "positionTitle": "Lead Software Engineer (Hybrid)",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/lead-software-engineer-hybrid-london-303831",
+        "matchScore": 78.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_8Thlightrebuild_8a68daae_20261025_040027.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Checkout.com",
+        "positionTitle": "Senior Software Engineer I",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.fr/jobs/companies/checkoutcom/senior-software-engineer-i-paris-123796",
+        "matchScore": 68.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Checkoutcom_6903c4f3_20261025_040027.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      }
+    ],
+    "failedAttempts": [],
+    "submissionUnconfirmedCases": [],
+    "skippedOpportunities": [],
+    "htmlBody": "<!DOCTYPE html><html><head><meta charset='utf-8'><style>\r\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; margin: 0; padding: 20px; background-color: #f8fafc; }\r\n.container { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }\r\n.header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: #ffffff; padding: 28px; }\r\n.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }\r\n.stat-card { background: #ffffff; padding: 14px; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }\r\n.stat-num { font-size: 24px; font-weight: bold; color: #0284c7; }\r\n.stat-label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\r\n.content { padding: 24px; }\r\n.section-title { font-size: 18px; font-weight: 700; color: #0f172a; margin-top: 24px; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }\r\ntable { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }\r\nth { background: #f8fafc; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; color: #475569; }\r\ntd { padding: 10px; border-bottom: 1px solid #e2e8f0; }\r\n.badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }\r\n.badge-success { background: #dcfce7; color: #15803d; }\r\n.badge-pending { background: #fef9c3; color: #854d0e; }\r\n.badge-failed { background: #fee2e2; color: #b91c1c; }\r\n.footer { padding: 20px; background: #f8fafc; text-align: center; font-size: 13px; color: #64748b; border-top: 1px solid #e2e8f0; }\r\n</style></head><body>\r\n<div class='container'>\r\n<div class='header'>\r\n<h1 style='margin:0; font-size: 22px;'>JY Career Agent — Daily Execution Report</h1>\r\n<p style='margin: 6px 0 0 0; opacity: 0.9;'>Candidate: Jibran Yousuf Khan | Run Date: 2026-10-25 | Duration: 0m 27s</p>\r\n</div>\r\n<div class='stats-grid'>\r\n<div class='stat-card'><div class='stat-num'>342</div><div class='stat-label'>Discovered</div></div>\r\n<div class='stat-card'><div class='stat-num'>1</div><div class='stat-label'>High Match (80+)</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#16a34a;'>0</div><div class='stat-label'>Submitted</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#ca8a04;'>4</div><div class='stat-label'>Pending Approval</div></div>\r\n</div>\r\n<div class='content'>\r\n<div class='section-title'>Job Sources Status</div>\r\n<table><thead><tr><th>Source</th><th>Status</th><th>Jobs Found</th><th>Notes</th></tr></thead><tbody>\r\n<tr><td><strong>Remotive</strong></td><td><span class='badge badge-success'>Connected</span></td><td>10</td><td>OK</td></tr>\r\n<tr><td><strong>Arbeitnow</strong></td><td><span class='badge badge-success'>Connected</span></td><td>300</td><td>OK</td></tr>\r\n<tr><td><strong>Jobicy</strong></td><td><span class='badge badge-success'>Connected</span></td><td>25</td><td>OK</td></tr>\r\n<tr><td><strong>Rozee</strong></td><td><span class='badge badge-success'>Connected</span></td><td>4</td><td>OK</td></tr>\r\n<tr><td><strong>LinkedIn</strong></td><td><span class='badge badge-success'>Connected</span></td><td>2</td><td>OK</td></tr>\r\n<tr><td><strong>Indeed</strong></td><td><span class='badge badge-success'>Connected</span></td><td>1</td><td>OK</td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Confirmed Submissions</div>\r\n<p style='color: #64748b; font-style: italic;'>No automated submissions were finalized during this run (Operating mode is Approval Required).</p>\r\n<div class='section-title'>Applications Pending Approval</div>\r\n<table><thead><tr><th>Employer</th><th>Role</th><th>Score</th><th>Reason / Required Action</th><th>Job Link</th></tr></thead><tbody>\r\n<tr><td><strong>Threecolts</strong></td><td>Senior Software Engineer – C# / .NET</td><td>82%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/threecolts/senior-software-engineer-c-net-491395' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>8Thlightrebuild</strong></td><td>Principal Software Engineer (Hybrid)</td><td>78%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/principal-software-engineer-hybrid-london-41987' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>8Thlightrebuild</strong></td><td>Lead Software Engineer (Hybrid)</td><td>78%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/lead-software-engineer-hybrid-london-303831' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Checkout.com</strong></td><td>Senior Software Engineer I</td><td>68%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.fr/jobs/companies/checkoutcom/senior-software-engineer-i-paris-123796' target='_blank'>View Job</a></td></tr>\r\n</tbody></table>\r\n</div>\r\n<div class='footer'>\r\n<p>To review, edit documents, or approve applications, open your local dashboard:</p>\r\n<p><strong>Frontend Dashboard:</strong> <a href='http://localhost:4200'>http://localhost:4200</a> | <strong>Backend API:</strong> <a href='http://localhost:5000/swagger'>http://localhost:5000/swagger</a></p>\r\n<p>JY Career Agent • Strictly Confidential • Built for Jibran Yousuf Khan</p>\r\n</div>\r\n</div></body></html>\r\n",
+    "plainTextBody": "================================================================================\r\nJY CAREER AGENT DAILY REPORT — 2026-10-25\r\n================================================================================\r\nCandidate: Jibran Yousuf Khan\r\nDuration:  0m 27s\r\nJobs Discovered:     342\r\nUnique Jobs:         273\r\nHigh Matches (80+):  1\r\nConfirmed Submitted: 0\r\nPending Approval:    4\r\nSkipped:             0\r\nDuplicates Skipped:  69\r\n\r\nCONFIRMED SUBMISSIONS:\r\n  (None submitted automatically - awaiting explicit approval in dashboard)\r\n\r\nPENDING APPROVAL:\r\n• Threecolts - Senior Software Engineer – C# / .NET (Match: 82%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/threecolts/senior-software-engineer-c-net-491395\r\n• 8Thlightrebuild - Principal Software Engineer (Hybrid) (Match: 78%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/principal-software-engineer-hybrid-london-41987\r\n• 8Thlightrebuild - Lead Software Engineer (Hybrid) (Match: 78%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/8thlightrebuild/lead-software-engineer-hybrid-london-303831\r\n• Checkout.com - Senior Software Engineer I (Match: 68%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.fr/jobs/companies/checkoutcom/senior-software-engineer-i-paris-123796\r\n\r\nOpen local dashboard to review: http://localhost:4200\r\n"
+  },
+  {
+    "id": "4b4cb7b950a04d698100c82ec5759a29",
+    "reportDate": "2026-10-24",
+    "runStartTimeUtc": "2026-10-24T04:00:00.0095628Z",
+    "runEndTimeUtc": "2026-10-24T04:00:23.0061016Z",
+    "durationFormatted": "0m 22s",
+    "subject": "JY Career Agent Daily Report — 2026-10-24 — 0 Applications Submitted",
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "deliverySuccess": true,
+    "deliveryStatusMessage": "Delivered successfully via smtp.gmail.com. Response: 2.0.0 OK  1792814428 ffacd0b85a97d-48e4115f496sm1372568f8f.5 - gsmtp",
+    "providerMessageId": "KAQ5FTYANUU4.OD0XAU6X8P0O2@te-pc06",
+    "sentAtUtc": "2026-10-24T04:00:27.797084Z",
+    "sourcesAttempted": [
+      {
+        "sourceName": "Remotive",
+        "success": true,
+        "jobsFound": 9
+      },
+      {
+        "sourceName": "Arbeitnow",
+        "success": true,
+        "jobsFound": 300
+      },
+      {
+        "sourceName": "Jobicy",
+        "success": true,
+        "jobsFound": 25
+      },
+      {
+        "sourceName": "Rozee",
+        "success": true,
+        "jobsFound": 4
+      },
+      {
+        "sourceName": "LinkedIn",
+        "success": true,
+        "jobsFound": 2
+      },
+      {
+        "sourceName": "Indeed",
+        "success": true,
+        "jobsFound": 1
+      }
+    ],
+    "totalJobsDiscovered": 341,
+    "totalUniqueJobs": 206,
+    "highMatchJobsCount": 0,
+    "applicationsSubmittedCount": 0,
+    "applicationsPendingCount": 3,
+    "applicationsSkippedCount": 0,
+    "duplicatesSkippedCount": 135,
+    "failedSubmissionsCount": 0,
+    "submissionUnconfirmedCount": 0,
+    "confirmedSubmissions": [],
+    "pendingApprovals": [
+      {
+        "companyName": "Docebo",
+        "positionTitle": "Technical Account Manager - German Speaking",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/docebo/remote-technical-account-manager-german-speaking-272819",
+        "matchScore": 68.8,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Docebo_c3eeb3b5_20261024_040022.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Andercore",
+        "positionTitle": "Staff Engineer",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.com/jobs/companies/andercore/staff-engineer-berlin-461575",
+        "matchScore": 67.2,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Andercore_e978d4ac_20261024_040022.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "prolific",
+        "positionTitle": "Senior Product Engineer",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/prolific/remote-senior-product-engineer-499608",
+        "matchScore": 67.2,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_prolific_9d7616bf_20261024_040022.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      }
+    ],
+    "failedAttempts": [],
+    "submissionUnconfirmedCases": [],
+    "skippedOpportunities": [],
+    "htmlBody": "<!DOCTYPE html><html><head><meta charset='utf-8'><style>\r\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; margin: 0; padding: 20px; background-color: #f8fafc; }\r\n.container { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }\r\n.header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: #ffffff; padding: 28px; }\r\n.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }\r\n.stat-card { background: #ffffff; padding: 14px; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }\r\n.stat-num { font-size: 24px; font-weight: bold; color: #0284c7; }\r\n.stat-label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\r\n.content { padding: 24px; }\r\n.section-title { font-size: 18px; font-weight: 700; color: #0f172a; margin-top: 24px; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }\r\ntable { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }\r\nth { background: #f8fafc; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; color: #475569; }\r\ntd { padding: 10px; border-bottom: 1px solid #e2e8f0; }\r\n.badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }\r\n.badge-success { background: #dcfce7; color: #15803d; }\r\n.badge-pending { background: #fef9c3; color: #854d0e; }\r\n.badge-failed { background: #fee2e2; color: #b91c1c; }\r\n.footer { padding: 20px; background: #f8fafc; text-align: center; font-size: 13px; color: #64748b; border-top: 1px solid #e2e8f0; }\r\n</style></head><body>\r\n<div class='container'>\r\n<div class='header'>\r\n<h1 style='margin:0; font-size: 22px;'>JY Career Agent — Daily Execution Report</h1>\r\n<p style='margin: 6px 0 0 0; opacity: 0.9;'>Candidate: Jibran Yousuf Khan | Run Date: 2026-10-24 | Duration: 0m 22s</p>\r\n</div>\r\n<div class='stats-grid'>\r\n<div class='stat-card'><div class='stat-num'>341</div><div class='stat-label'>Discovered</div></div>\r\n<div class='stat-card'><div class='stat-num'>0</div><div class='stat-label'>High Match (80+)</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#16a34a;'>0</div><div class='stat-label'>Submitted</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#ca8a04;'>3</div><div class='stat-label'>Pending Approval</div></div>\r\n</div>\r\n<div class='content'>\r\n<div class='section-title'>Job Sources Status</div>\r\n<table><thead><tr><th>Source</th><th>Status</th><th>Jobs Found</th><th>Notes</th></tr></thead><tbody>\r\n<tr><td><strong>Remotive</strong></td><td><span class='badge badge-success'>Connected</span></td><td>9</td><td>OK</td></tr>\r\n<tr><td><strong>Arbeitnow</strong></td><td><span class='badge badge-success'>Connected</span></td><td>300</td><td>OK</td></tr>\r\n<tr><td><strong>Jobicy</strong></td><td><span class='badge badge-success'>Connected</span></td><td>25</td><td>OK</td></tr>\r\n<tr><td><strong>Rozee</strong></td><td><span class='badge badge-success'>Connected</span></td><td>4</td><td>OK</td></tr>\r\n<tr><td><strong>LinkedIn</strong></td><td><span class='badge badge-success'>Connected</span></td><td>2</td><td>OK</td></tr>\r\n<tr><td><strong>Indeed</strong></td><td><span class='badge badge-success'>Connected</span></td><td>1</td><td>OK</td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Confirmed Submissions</div>\r\n<p style='color: #64748b; font-style: italic;'>No automated submissions were finalized during this run (Operating mode is Approval Required).</p>\r\n<div class='section-title'>Applications Pending Approval</div>\r\n<table><thead><tr><th>Employer</th><th>Role</th><th>Score</th><th>Reason / Required Action</th><th>Job Link</th></tr></thead><tbody>\r\n<tr><td><strong>Docebo</strong></td><td>Technical Account Manager - German Speaking</td><td>69%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.com/jobs/companies/docebo/remote-technical-account-manager-german-speaking-272819' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Andercore</strong></td><td>Staff Engineer</td><td>67%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.com/jobs/companies/andercore/staff-engineer-berlin-461575' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>prolific</strong></td><td>Senior Product Engineer</td><td>67%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/prolific/remote-senior-product-engineer-499608' target='_blank'>View Job</a></td></tr>\r\n</tbody></table>\r\n</div>\r\n<div class='footer'>\r\n<p>To review, edit documents, or approve applications, open your local dashboard:</p>\r\n<p><strong>Frontend Dashboard:</strong> <a href='http://localhost:4200'>http://localhost:4200</a> | <strong>Backend API:</strong> <a href='http://localhost:5000/swagger'>http://localhost:5000/swagger</a></p>\r\n<p>JY Career Agent • Strictly Confidential • Built for Jibran Yousuf Khan</p>\r\n</div>\r\n</div></body></html>\r\n",
+    "plainTextBody": "================================================================================\r\nJY CAREER AGENT DAILY REPORT — 2026-10-24\r\n================================================================================\r\nCandidate: Jibran Yousuf Khan\r\nDuration:  0m 22s\r\nJobs Discovered:     341\r\nUnique Jobs:         206\r\nHigh Matches (80+):  0\r\nConfirmed Submitted: 0\r\nPending Approval:    3\r\nSkipped:             0\r\nDuplicates Skipped:  135\r\n\r\nCONFIRMED SUBMISSIONS:\r\n  (None submitted automatically - awaiting explicit approval in dashboard)\r\n\r\nPENDING APPROVAL:\r\n• Docebo - Technical Account Manager - German Speaking (Match: 69%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.com/jobs/companies/docebo/remote-technical-account-manager-german-speaking-272819\r\n• Andercore - Staff Engineer (Match: 67%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.com/jobs/companies/andercore/staff-engineer-berlin-461575\r\n• prolific - Senior Product Engineer (Match: 67%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/prolific/remote-senior-product-engineer-499608\r\n\r\nOpen local dashboard to review: http://localhost:4200\r\n"
+  },
+  {
+    "id": "01be69dd412e4010b67a5d393c6c37ec",
+    "reportDate": "2026-10-23",
+    "runStartTimeUtc": "2026-10-23T16:30:22.2049296Z",
+    "runEndTimeUtc": "2026-10-23T16:30:25.65546Z",
+    "durationFormatted": "0m 3s",
+    "subject": "JY Career Agent Daily Report — 2026-10-23 — 0 Applications Submitted",
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "deliverySuccess": true,
+    "deliveryStatusMessage": "Delivered successfully via smtp.gmail.com. Response: 2.0.0 OK  1792773029 5b1f17b1804b1-4a29cd9d09csm16332845e9.5 - gsmtp",
+    "providerMessageId": "41RN2NO5NUU4.BDCUJ9S66ZM13@te-pc06",
+    "sentAtUtc": "2026-10-23T16:30:28.6557501Z",
+    "sourcesAttempted": [
+      {
+        "sourceName": "Remotive",
+        "success": true,
+        "jobsFound": 9
+      },
+      {
+        "sourceName": "Arbeitnow",
+        "success": true,
+        "jobsFound": 300
+      },
+      {
+        "sourceName": "Jobicy",
+        "success": true,
+        "jobsFound": 25
+      },
+      {
+        "sourceName": "Rozee",
+        "success": true,
+        "jobsFound": 4
+      },
+      {
+        "sourceName": "LinkedIn",
+        "success": true,
+        "jobsFound": 2
+      },
+      {
+        "sourceName": "Indeed",
+        "success": true,
+        "jobsFound": 1
+      }
+    ],
+    "totalJobsDiscovered": 341,
+    "totalUniqueJobs": 0,
+    "highMatchJobsCount": 0,
+    "applicationsSubmittedCount": 0,
+    "applicationsPendingCount": 0,
+    "applicationsSkippedCount": 0,
+    "duplicatesSkippedCount": 341,
+    "failedSubmissionsCount": 0,
+    "submissionUnconfirmedCount": 0,
+    "confirmedSubmissions": [],
+    "pendingApprovals": [],
+    "failedAttempts": [],
+    "submissionUnconfirmedCases": [],
+    "skippedOpportunities": [],
+    "htmlBody": "<!DOCTYPE html><html><head><meta charset='utf-8'><style>\r\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; margin: 0; padding: 20px; background-color: #f8fafc; }\r\n.container { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }\r\n.header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: #ffffff; padding: 28px; }\r\n.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }\r\n.stat-card { background: #ffffff; padding: 14px; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }\r\n.stat-num { font-size: 24px; font-weight: bold; color: #0284c7; }\r\n.stat-label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\r\n.content { padding: 24px; }\r\n.section-title { font-size: 18px; font-weight: 700; color: #0f172a; margin-top: 24px; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }\r\ntable { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }\r\nth { background: #f8fafc; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; color: #475569; }\r\ntd { padding: 10px; border-bottom: 1px solid #e2e8f0; }\r\n.badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }\r\n.badge-success { background: #dcfce7; color: #15803d; }\r\n.badge-pending { background: #fef9c3; color: #854d0e; }\r\n.badge-failed { background: #fee2e2; color: #b91c1c; }\r\n.footer { padding: 20px; background: #f8fafc; text-align: center; font-size: 13px; color: #64748b; border-top: 1px solid #e2e8f0; }\r\n</style></head><body>\r\n<div class='container'>\r\n<div class='header'>\r\n<h1 style='margin:0; font-size: 22px;'>JY Career Agent — Daily Execution Report</h1>\r\n<p style='margin: 6px 0 0 0; opacity: 0.9;'>Candidate: Jibran Yousuf Khan | Run Date: 2026-10-23 | Duration: 0m 3s</p>\r\n</div>\r\n<div class='stats-grid'>\r\n<div class='stat-card'><div class='stat-num'>341</div><div class='stat-label'>Discovered</div></div>\r\n<div class='stat-card'><div class='stat-num'>0</div><div class='stat-label'>High Match (80+)</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#16a34a;'>0</div><div class='stat-label'>Submitted</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#ca8a04;'>0</div><div class='stat-label'>Pending Approval</div></div>\r\n</div>\r\n<div class='content'>\r\n<div class='section-title'>Job Sources Status</div>\r\n<table><thead><tr><th>Source</th><th>Status</th><th>Jobs Found</th><th>Notes</th></tr></thead><tbody>\r\n<tr><td><strong>Remotive</strong></td><td><span class='badge badge-success'>Connected</span></td><td>9</td><td>OK</td></tr>\r\n<tr><td><strong>Arbeitnow</strong></td><td><span class='badge badge-success'>Connected</span></td><td>300</td><td>OK</td></tr>\r\n<tr><td><strong>Jobicy</strong></td><td><span class='badge badge-success'>Connected</span></td><td>25</td><td>OK</td></tr>\r\n<tr><td><strong>Rozee</strong></td><td><span class='badge badge-success'>Connected</span></td><td>4</td><td>OK</td></tr>\r\n<tr><td><strong>LinkedIn</strong></td><td><span class='badge badge-success'>Connected</span></td><td>2</td><td>OK</td></tr>\r\n<tr><td><strong>Indeed</strong></td><td><span class='badge badge-success'>Connected</span></td><td>1</td><td>OK</td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Confirmed Submissions</div>\r\n<p style='color: #64748b; font-style: italic;'>No automated submissions were finalized during this run (Operating mode is Approval Required).</p>\r\n<div class='section-title'>Applications Pending Approval</div>\r\n<p style='color: #64748b; font-style: italic;'>No applications currently pending approval.</p>\r\n</div>\r\n<div class='footer'>\r\n<p>To review, edit documents, or approve applications, open your local dashboard:</p>\r\n<p><strong>Frontend Dashboard:</strong> <a href='http://localhost:4200'>http://localhost:4200</a> | <strong>Backend API:</strong> <a href='http://localhost:5000/swagger'>http://localhost:5000/swagger</a></p>\r\n<p>JY Career Agent • Strictly Confidential • Built for Jibran Yousuf Khan</p>\r\n</div>\r\n</div></body></html>\r\n",
+    "plainTextBody": "================================================================================\r\nJY CAREER AGENT DAILY REPORT — 2026-10-23\r\n================================================================================\r\nCandidate: Jibran Yousuf Khan\r\nDuration:  0m 3s\r\nJobs Discovered:     341\r\nUnique Jobs:         0\r\nHigh Matches (80+):  0\r\nConfirmed Submitted: 0\r\nPending Approval:    0\r\nSkipped:             0\r\nDuplicates Skipped:  341\r\n\r\nCONFIRMED SUBMISSIONS:\r\n  (None submitted automatically - awaiting explicit approval in dashboard)\r\n\r\nPENDING APPROVAL:\r\n\r\nOpen local dashboard to review: http://localhost:4200\r\n"
+  },
+  {
+    "id": "8d76d8f3f91e4a3797806fe5079bf8c0",
+    "reportDate": "2026-10-23",
+    "runStartTimeUtc": "2026-10-23T16:27:15.6537902Z",
+    "runEndTimeUtc": "2026-10-23T16:27:46.0906992Z",
+    "durationFormatted": "0m 30s",
+    "subject": "JY Career Agent Daily Report — 2026-10-23 — 0 Applications Submitted",
+    "recipientEmail": "jibrankhalily@gmail.com",
+    "deliverySuccess": false,
+    "deliveryStatusMessage": "SMTP Password not configured in environment variable 'JY_EMAIL__SMTP_PASSWORD'. Report generated and logged locally.",
+    "sentAtUtc": "2026-10-23T16:27:46.1867498Z",
+    "sourcesAttempted": [
+      {
+        "sourceName": "Remotive",
+        "success": true,
+        "jobsFound": 9
+      },
+      {
+        "sourceName": "Arbeitnow",
+        "success": true,
+        "jobsFound": 300
+      },
+      {
+        "sourceName": "Jobicy",
+        "success": true,
+        "jobsFound": 25
+      },
+      {
+        "sourceName": "Rozee",
+        "success": true,
+        "jobsFound": 4
+      },
+      {
+        "sourceName": "LinkedIn",
+        "success": true,
+        "jobsFound": 2
+      },
+      {
+        "sourceName": "Indeed",
+        "success": true,
+        "jobsFound": 1
+      }
+    ],
+    "totalJobsDiscovered": 341,
+    "totalUniqueJobs": 322,
+    "highMatchJobsCount": 5,
+    "applicationsSubmittedCount": 0,
+    "applicationsPendingCount": 16,
+    "applicationsSkippedCount": 0,
+    "duplicatesSkippedCount": 19,
+    "failedSubmissionsCount": 0,
+    "submissionUnconfirmedCount": 0,
+    "confirmedSubmissions": [],
+    "pendingApprovals": [
+      {
+        "companyName": "Aventrix Global / FinTech Solutions",
+        "positionTitle": "Senior Full Stack .NET & Angular Engineer",
+        "sourcePlatform": "Rozee",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.rozee.pk/job/senior-fullstack-net-angular-karachi",
+        "matchScore": 89,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_AventrixGlobalFinTechSolutions_e066a667_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Systems Limited / Tech Services Pakistan",
+        "positionTitle": "Senior .NET Core / ASP.NET Developer",
+        "sourcePlatform": "Rozee",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.rozee.pk/job/senior-net-core-developer-karachi",
+        "matchScore": 86.8,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SystemsLimitedTechServicesPakistan_73fd1a5f_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Optima Cloud Solutions (EMEA Remote)",
+        "positionTitle": "Senior Full Stack Engineer (.NET 8/9 & Angular)",
+        "sourcePlatform": "LinkedIn",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.linkedin.com/jobs/view/senior-full-stack-engineer-net-angular-remote",
+        "matchScore": 86.2,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_OptimaCloudSolutionsEMEARemote_1314ea2e_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Lemon.io",
+        "positionTitle": "Senior React Full-stack Developer",
+        "sourcePlatform": "Remotive",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133",
+        "matchScore": 86,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Lemonio_8f7b2cfb_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Lemon.io",
+        "positionTitle": "Senior back-end Engineer",
+        "sourcePlatform": "Remotive",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://remotive.com/remote-jobs/software-development/senior-back-end-engineer-2091132",
+        "matchScore": 86,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Lemonio_674e63f6_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "BioCare Health Systems",
+        "positionTitle": "Senior C# .NET Developer (Healthcare & ERP)",
+        "sourcePlatform": "Indeed",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://pk.indeed.com/viewjob?jk=biocare-healthcare-erp-net-karachi",
+        "matchScore": 74.8,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_BioCareHealthSystems_20f9d0c9_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Cognitive Solutions Asia",
+        "positionTitle": "Senior AI Application & .NET Engineer",
+        "sourcePlatform": "Rozee",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.rozee.pk/job/senior-ai-application-net-engineer",
+        "matchScore": 74.2,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_CognitiveSolutionsAsia_4f92b112_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Finz Global Financial Technologies",
+        "positionTitle": "Lead .NET Core Software Architect",
+        "sourcePlatform": "LinkedIn",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.linkedin.com/jobs/view/lead-net-core-software-architect-karachi",
+        "matchScore": 72.8,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_FinzGlobalFinancialTechnologies_c041e42a_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Banyansoftware",
+        "positionTitle": "Forward Deployed Engineer",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.nl/jobs/companies/banyansoftware/forward-deployed-engineer-354025",
+        "matchScore": 71.8,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Banyansoftware_2ab1ef11_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "nice",
+        "positionTitle": "Lead Software Architect",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/nice/lead-software-architect-394758",
+        "matchScore": 70.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_nice_92f52e51_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "Sunweb Group",
+        "positionTitle": "Senior AI Solution Specialist",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.nl/jobs/companies/sunweb-group/senior-ai-solution-specialist-rotterdam-496873",
+        "matchScore": 70.2,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SunwebGroup_3feaae1d_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "SeatGeek",
+        "positionTitle": "Engineering Manager, Core Engineering",
+        "sourcePlatform": "Jobicy",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://jobicy.com/jobs/156592-engineering-manager-core-engineering",
+        "matchScore": 68,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SeatGeek_f54832df_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "OBRO AG",
+        "positionTitle": "ICT System Engineer & Developer 80-100 %",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.ch/jobs/companies/obro-ag/ict-system-engineer-developer-80-100-zug-273029",
+        "matchScore": 67,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_OBROAG_1d48e572_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "p3b AG",
+        "positionTitle": "Software-Entwickler:in .NET / Azure 80-100%",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.ch/jobs/companies/p3b-ag/software-entwicklerin-net-azure-80-100-bern-143843",
+        "matchScore": 66.8,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_p3bAG_e5cfd6ad_20261023_162745.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "AlmavivA de Belgique",
+        "positionTitle": "Backend Developer .Net - Remote from EU - Deadline 27/10/26",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.nl/jobs/companies/almaviva-de-belgique/backend-developer-net-remote-from-eu-deadline-27-10-26-the-hague-434774",
+        "matchScore": 66.5,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_AlmavivAdeBelgique_1aea1337_20261023_162746.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      },
+      {
+        "companyName": "nice",
+        "positionTitle": "Senior Solutions Architect",
+        "sourcePlatform": "Arbeitnow",
+        "jobLocation": "Asia/Karachi",
+        "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/nice/senior-solutions-architect-238397",
+        "matchScore": 66,
+        "applicationStatus": "PendingApproval",
+        "submissionTimeKarachi": "Not submitted",
+        "cvVersionUsed": "Jibran_Yousuf_Khan_CV_nice_5208e970_20261023_162746.txt",
+        "errorOrPendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+        "recommendedNextAction": "Review tailored CV and cover letter in Approval Queue."
+      }
+    ],
+    "failedAttempts": [],
+    "submissionUnconfirmedCases": [],
+    "skippedOpportunities": [],
+    "htmlBody": "<!DOCTYPE html><html><head><meta charset='utf-8'><style>\r\nbody { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; margin: 0; padding: 20px; background-color: #f8fafc; }\r\n.container { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }\r\n.header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: #ffffff; padding: 28px; }\r\n.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }\r\n.stat-card { background: #ffffff; padding: 14px; border-radius: 8px; text-align: center; border: 1px solid #e2e8f0; }\r\n.stat-num { font-size: 24px; font-weight: bold; color: #0284c7; }\r\n.stat-label { font-size: 12px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\r\n.content { padding: 24px; }\r\n.section-title { font-size: 18px; font-weight: 700; color: #0f172a; margin-top: 24px; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }\r\ntable { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }\r\nth { background: #f8fafc; text-align: left; padding: 10px; border-bottom: 2px solid #cbd5e1; color: #475569; }\r\ntd { padding: 10px; border-bottom: 1px solid #e2e8f0; }\r\n.badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }\r\n.badge-success { background: #dcfce7; color: #15803d; }\r\n.badge-pending { background: #fef9c3; color: #854d0e; }\r\n.badge-failed { background: #fee2e2; color: #b91c1c; }\r\n.footer { padding: 20px; background: #f8fafc; text-align: center; font-size: 13px; color: #64748b; border-top: 1px solid #e2e8f0; }\r\n</style></head><body>\r\n<div class='container'>\r\n<div class='header'>\r\n<h1 style='margin:0; font-size: 22px;'>JY Career Agent — Daily Execution Report</h1>\r\n<p style='margin: 6px 0 0 0; opacity: 0.9;'>Candidate: Jibran Yousuf Khan | Run Date: 2026-10-23 | Duration: 0m 30s</p>\r\n</div>\r\n<div class='stats-grid'>\r\n<div class='stat-card'><div class='stat-num'>341</div><div class='stat-label'>Discovered</div></div>\r\n<div class='stat-card'><div class='stat-num'>5</div><div class='stat-label'>High Match (80+)</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#16a34a;'>0</div><div class='stat-label'>Submitted</div></div>\r\n<div class='stat-card'><div class='stat-num' style='color:#ca8a04;'>16</div><div class='stat-label'>Pending Approval</div></div>\r\n</div>\r\n<div class='content'>\r\n<div class='section-title'>Job Sources Status</div>\r\n<table><thead><tr><th>Source</th><th>Status</th><th>Jobs Found</th><th>Notes</th></tr></thead><tbody>\r\n<tr><td><strong>Remotive</strong></td><td><span class='badge badge-success'>Connected</span></td><td>9</td><td>OK</td></tr>\r\n<tr><td><strong>Arbeitnow</strong></td><td><span class='badge badge-success'>Connected</span></td><td>300</td><td>OK</td></tr>\r\n<tr><td><strong>Jobicy</strong></td><td><span class='badge badge-success'>Connected</span></td><td>25</td><td>OK</td></tr>\r\n<tr><td><strong>Rozee</strong></td><td><span class='badge badge-success'>Connected</span></td><td>4</td><td>OK</td></tr>\r\n<tr><td><strong>LinkedIn</strong></td><td><span class='badge badge-success'>Connected</span></td><td>2</td><td>OK</td></tr>\r\n<tr><td><strong>Indeed</strong></td><td><span class='badge badge-success'>Connected</span></td><td>1</td><td>OK</td></tr>\r\n</tbody></table>\r\n<div class='section-title'>Confirmed Submissions</div>\r\n<p style='color: #64748b; font-style: italic;'>No automated submissions were finalized during this run (Operating mode is Approval Required).</p>\r\n<div class='section-title'>Applications Pending Approval</div>\r\n<table><thead><tr><th>Employer</th><th>Role</th><th>Score</th><th>Reason / Required Action</th><th>Job Link</th></tr></thead><tbody>\r\n<tr><td><strong>Aventrix Global / FinTech Solutions</strong></td><td>Senior Full Stack .NET & Angular Engineer</td><td>89%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.rozee.pk/job/senior-fullstack-net-angular-karachi' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Systems Limited / Tech Services Pakistan</strong></td><td>Senior .NET Core / ASP.NET Developer</td><td>87%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.rozee.pk/job/senior-net-core-developer-karachi' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Optima Cloud Solutions (EMEA Remote)</strong></td><td>Senior Full Stack Engineer (.NET 8/9 & Angular)</td><td>86%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.linkedin.com/jobs/view/senior-full-stack-engineer-net-angular-remote' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Lemon.io</strong></td><td>Senior React Full-stack Developer</td><td>86%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Lemon.io</strong></td><td>Senior back-end Engineer</td><td>86%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://remotive.com/remote-jobs/software-development/senior-back-end-engineer-2091132' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>BioCare Health Systems</strong></td><td>Senior C# .NET Developer (Healthcare & ERP)</td><td>75%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://pk.indeed.com/viewjob?jk=biocare-healthcare-erp-net-karachi' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Cognitive Solutions Asia</strong></td><td>Senior AI Application & .NET Engineer</td><td>74%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.rozee.pk/job/senior-ai-application-net-engineer' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Finz Global Financial Technologies</strong></td><td>Lead .NET Core Software Architect</td><td>73%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.linkedin.com/jobs/view/lead-net-core-software-architect-karachi' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Banyansoftware</strong></td><td>Forward Deployed Engineer</td><td>72%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.nl/jobs/companies/banyansoftware/forward-deployed-engineer-354025' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>nice</strong></td><td>Lead Software Architect</td><td>70%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/nice/lead-software-architect-394758' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>Sunweb Group</strong></td><td>Senior AI Solution Specialist</td><td>70%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.nl/jobs/companies/sunweb-group/senior-ai-solution-specialist-rotterdam-496873' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>SeatGeek</strong></td><td>Engineering Manager, Core Engineering</td><td>68%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://jobicy.com/jobs/156592-engineering-manager-core-engineering' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>OBRO AG</strong></td><td>ICT System Engineer & Developer 80-100 %</td><td>67%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.ch/jobs/companies/obro-ag/ict-system-engineer-developer-80-100-zug-273029' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>p3b AG</strong></td><td>Software-Entwickler:in .NET / Azure 80-100%</td><td>67%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.ch/jobs/companies/p3b-ag/software-entwicklerin-net-azure-80-100-bern-143843' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>AlmavivA de Belgique</strong></td><td>Backend Developer .Net - Remote from EU - Deadline 27/10/26</td><td>66%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.nl/jobs/companies/almaviva-de-belgique/backend-developer-net-remote-from-eu-deadline-27-10-26-the-hague-434774' target='_blank'>View Job</a></td></tr>\r\n<tr><td><strong>nice</strong></td><td>Senior Solutions Architect</td><td>66%</td><td>Application prepared. Awaiting candidate review and submission approval.</td><td><a href='https://www.arbeitnow.co.uk/jobs/companies/nice/senior-solutions-architect-238397' target='_blank'>View Job</a></td></tr>\r\n</tbody></table>\r\n</div>\r\n<div class='footer'>\r\n<p>To review, edit documents, or approve applications, open your local dashboard:</p>\r\n<p><strong>Frontend Dashboard:</strong> <a href='http://localhost:4200'>http://localhost:4200</a> | <strong>Backend API:</strong> <a href='http://localhost:5000/swagger'>http://localhost:5000/swagger</a></p>\r\n<p>JY Career Agent • Strictly Confidential • Built for Jibran Yousuf Khan</p>\r\n</div>\r\n</div></body></html>\r\n",
+    "plainTextBody": "================================================================================\r\nJY CAREER AGENT DAILY REPORT — 2026-10-23\r\n================================================================================\r\nCandidate: Jibran Yousuf Khan\r\nDuration:  0m 30s\r\nJobs Discovered:     341\r\nUnique Jobs:         322\r\nHigh Matches (80+):  5\r\nConfirmed Submitted: 0\r\nPending Approval:    16\r\nSkipped:             0\r\nDuplicates Skipped:  19\r\n\r\nCONFIRMED SUBMISSIONS:\r\n  (None submitted automatically - awaiting explicit approval in dashboard)\r\n\r\nPENDING APPROVAL:\r\n• Aventrix Global / FinTech Solutions - Senior Full Stack .NET & Angular Engineer (Match: 89%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.rozee.pk/job/senior-fullstack-net-angular-karachi\r\n• Systems Limited / Tech Services Pakistan - Senior .NET Core / ASP.NET Developer (Match: 87%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.rozee.pk/job/senior-net-core-developer-karachi\r\n• Optima Cloud Solutions (EMEA Remote) - Senior Full Stack Engineer (.NET 8/9 & Angular) (Match: 86%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.linkedin.com/jobs/view/senior-full-stack-engineer-net-angular-remote\r\n• Lemon.io - Senior React Full-stack Developer (Match: 86%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133\r\n• Lemon.io - Senior back-end Engineer (Match: 86%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://remotive.com/remote-jobs/software-development/senior-back-end-engineer-2091132\r\n• BioCare Health Systems - Senior C# .NET Developer (Healthcare & ERP) (Match: 75%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://pk.indeed.com/viewjob?jk=biocare-healthcare-erp-net-karachi\r\n• Cognitive Solutions Asia - Senior AI Application & .NET Engineer (Match: 74%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.rozee.pk/job/senior-ai-application-net-engineer\r\n• Finz Global Financial Technologies - Lead .NET Core Software Architect (Match: 73%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.linkedin.com/jobs/view/lead-net-core-software-architect-karachi\r\n• Banyansoftware - Forward Deployed Engineer (Match: 72%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.nl/jobs/companies/banyansoftware/forward-deployed-engineer-354025\r\n• nice - Lead Software Architect (Match: 70%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/nice/lead-software-architect-394758\r\n• Sunweb Group - Senior AI Solution Specialist (Match: 70%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.nl/jobs/companies/sunweb-group/senior-ai-solution-specialist-rotterdam-496873\r\n• SeatGeek - Engineering Manager, Core Engineering (Match: 68%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://jobicy.com/jobs/156592-engineering-manager-core-engineering\r\n• OBRO AG - ICT System Engineer & Developer 80-100 % (Match: 67%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.ch/jobs/companies/obro-ag/ict-system-engineer-developer-80-100-zug-273029\r\n• p3b AG - Software-Entwickler:in .NET / Azure 80-100% (Match: 67%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.ch/jobs/companies/p3b-ag/software-entwicklerin-net-azure-80-100-bern-143843\r\n• AlmavivA de Belgique - Backend Developer .Net - Remote from EU - Deadline 27/10/26 (Match: 66%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.nl/jobs/companies/almaviva-de-belgique/backend-developer-net-remote-from-eu-deadline-27-10-26-the-hague-434774\r\n• nice - Senior Solutions Architect (Match: 66%) - Reason: Application prepared. Awaiting candidate review and submission approval. - Link: https://www.arbeitnow.co.uk/jobs/companies/nice/senior-solutions-architect-238397\r\n\r\nOpen local dashboard to review: http://localhost:4200\r\n"
+  }
+]

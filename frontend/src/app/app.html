@@ -1,0 +1,754 @@
+<div class="app-layout">
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="brand-section">
+      <div class="brand-logo">JY</div>
+      <div>
+        <h1 class="brand-title">JY Career Agent</h1>
+        <p class="brand-subtitle">Agentic Job Search & Application Automation • Jibran Yousuf Khan</p>
+      </div>
+    </div>
+
+    <!-- Agent Live Indicator -->
+    <div class="status-indicator-bar">
+      <div class="status-pill" [ngClass]="stats?.isRunning ? 'status-running' : 'status-idle'">
+        <span class="status-dot"></span>
+        <span>{{ stats?.isRunning ? 'AGENT RUNNING' : (stats?.status?.toUpperCase() || 'IDLE') }}</span>
+      </div>
+
+      <div class="mode-badge" [title]="'Operating Mode: ' + (stats?.operatingMode || 'ApprovalRequired')">
+        Mode: <strong>{{ stats?.operatingMode === 'ApprovalRequired' ? 'Approval Required' : stats?.operatingMode }}</strong>
+      </div>
+
+      <button class="btn btn-primary" (click)="triggerRunNow()" [disabled]="stats?.isRunning" id="btn-run-now">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span>{{ stats?.isRunning ? 'Running...' : 'Run Cycle Now' }}</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Notification & Alert Toast -->
+  <div *ngIf="actionMessage" class="toast-banner toast-success fade-in">
+    <span>{{ actionMessage }}</span>
+  </div>
+  <div *ngIf="errorMessage" class="toast-banner toast-error fade-in">
+    <span>{{ errorMessage }}</span>
+  </div>
+
+  <!-- Primary Tab Bar -->
+  <nav class="nav-tabs">
+    <button class="tab-btn" [class.active]="activeTab === 'overview'" (click)="activeTab = 'overview'" id="tab-overview">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      <span>Overview</span>
+    </button>
+    <button class="tab-btn" [class.active]="activeTab === 'jobs'" (click)="activeTab = 'jobs'" id="tab-jobs">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <span>Job Search</span>
+      <span class="tab-counter">{{ jobs.length }}</span>
+    </button>
+    <button class="tab-btn" [class.active]="activeTab === 'approval'" (click)="activeTab = 'approval'" id="tab-approval">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+      <span>Approval Queue</span>
+      <span class="tab-counter alert" *ngIf="getPendingApprovalApps().length > 0">{{ getPendingApprovalApps().length }}</span>
+    </button>
+    <button class="tab-btn" [class.active]="activeTab === 'applications'" (click)="activeTab = 'applications'" id="tab-applications">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      <span>Applications</span>
+      <span class="tab-counter">{{ applications.length }}</span>
+    </button>
+    <button class="tab-btn" [class.active]="activeTab === 'cv'" (click)="activeTab = 'cv'" id="tab-cv">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <span>CV & Profile</span>
+    </button>
+    <button class="tab-btn" [class.active]="activeTab === 'reports'" (click)="activeTab = 'reports'" id="tab-reports">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      <span>Daily Reports</span>
+      <span class="tab-counter">{{ reports.length }}</span>
+    </button>
+    <button class="tab-btn" [class.active]="activeTab === 'settings'" (click)="activeTab = 'settings'" id="tab-settings">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+    
+    <!-- ==================== SECTION: OVERVIEW ==================== -->
+    <div *ngIf="activeTab === 'overview'" class="tab-pane fade-in">
+      <!-- Metric Cards -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-title">Discovered Jobs</span>
+            <span class="metric-icon">🔍</span>
+          </div>
+          <div class="metric-value">{{ stats?.totalJobsInHistory || 0 }}</div>
+          <div class="metric-sub">Found today: {{ stats?.totalJobsFoundToday || 0 }}</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-title">High Matches (80%+)</span>
+            <span class="metric-icon">⭐</span>
+          </div>
+          <div class="metric-value" style="color: #60a5fa;">{{ stats?.highMatchJobsCount || 0 }}</div>
+          <div class="metric-sub">Top priority for application</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-title">Submitted Today</span>
+            <span class="metric-icon">🚀</span>
+          </div>
+          <div class="metric-value" style="color: #34d399;">
+            {{ stats?.applicationsSubmittedToday || 0 }} / {{ stats?.maxDailyApplications || 10 }}
+          </div>
+          <div class="metric-sub">Daily limit usage</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <span class="metric-title">Pending Approvals</span>
+            <span class="metric-icon">⏳</span>
+          </div>
+          <div class="metric-value" style="color: #fbbf24;">{{ stats?.applicationsPendingApproval || 0 }}</div>
+          <div class="metric-sub">Require candidate confirmation</div>
+        </div>
+      </div>
+
+      <!-- Schedule & Email Status Cards -->
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Scheduler & Next Run
+          </h3>
+          <p class="info-text">
+            Configured Daily Run: <strong>09:00:00 AM (Asia/Karachi)</strong>
+          </p>
+          <div class="info-item">
+            <span>Next Run:</span>
+            <strong>{{ formatDate(stats?.nextScheduledRun) }}</strong>
+          </div>
+          <div class="info-item">
+            <span>Last Completed Run:</span>
+            <span>{{ formatDate(stats?.lastRunEndTime) }} (Status: {{ stats?.lastRunStatus }})</span>
+          </div>
+          <div class="notice-box">
+            💡 Windows Task Scheduler can automatically launch or resume the application upon Windows boot.
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Daily Email Reporting
+          </h3>
+          <p class="info-text">
+            Mandatory summary emailed daily to: <strong>{{ settings?.email?.recipientEmail || 'jibrankhalily@gmail.com' }}</strong>
+          </p>
+          <div class="info-item">
+            <span>Latest Report Date:</span>
+            <strong>{{ stats?.latestEmailReport?.reportDate || 'None sent yet' }}</strong>
+          </div>
+          <div class="info-item">
+            <span>Delivery Status:</span>
+            <span [class.text-success]="stats?.latestEmailReport?.deliverySuccess" [class.text-amber]="!stats?.latestEmailReport?.deliverySuccess">
+              {{ stats?.latestEmailReport?.deliveryStatusMessage || 'Awaiting next run' }}
+            </span>
+          </div>
+          <div class="action-row">
+            <button class="btn btn-secondary" (click)="activeTab = 'reports'">View Reports</button>
+            <button class="btn btn-secondary" (click)="sendTestEmail()">Send Test Email</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Job Sources Status -->
+      <div class="card-section">
+        <h3>Connected Job Sources</h3>
+        <div class="sources-grid">
+          <div *ngFor="let src of stats?.activeSources" class="source-card">
+            <div class="source-header">
+              <span class="source-name">{{ src.sourceName }}</span>
+              <span class="badge badge-green">Active</span>
+            </div>
+            <div class="source-access">{{ src.accessType }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION: JOB SEARCH ==================== -->
+    <div *ngIf="activeTab === 'jobs'" class="tab-pane fade-in">
+      <div class="filter-bar">
+        <div class="search-input-wrapper">
+          <input type="text" [(ngModel)]="jobSearchQuery" (keyup.enter)="loadJobs()" placeholder="Search title, company, skills, keywords..." class="form-input">
+        </div>
+        <select [(ngModel)]="jobSourceFilter" (change)="loadJobs()" class="form-select">
+          <option value="">All Sources</option>
+          <option value="Remotive">Remotive</option>
+          <option value="Arbeitnow">Arbeitnow</option>
+          <option value="Jobicy">Jobicy</option>
+          <option value="Rozee">Rozee (Pakistan)</option>
+          <option value="LinkedIn">LinkedIn (Assisted)</option>
+          <option value="Indeed">Indeed (Assisted)</option>
+        </select>
+        <select [(ngModel)]="jobMinScoreFilter" (change)="loadJobs()" class="form-select">
+          <option [ngValue]="null">All Scores</option>
+          <option [ngValue]="80">High Priority (80%+)</option>
+          <option [ngValue]="65">Approval Queue (65%+)</option>
+        </select>
+        <button class="btn btn-primary" (click)="loadJobs()">Filter</button>
+      </div>
+
+      <!-- Job List -->
+      <div class="jobs-list">
+        <div *ngIf="jobs.length === 0" class="empty-state">
+          <p>No jobs match current filters. Click "Run Cycle Now" to discover newly posted jobs.</p>
+        </div>
+
+        <div *ngFor="let job of jobs" class="job-card" [class.job-high-match]="(job.matchScore?.totalScore || 0) >= 80">
+          <div class="job-top-row">
+            <div>
+              <h3 class="job-title">{{ job.title }}</h3>
+              <p class="job-meta">
+                <strong>{{ job.employer }}</strong> • <span>{{ job.location }}</span> • 
+                <span class="badge badge-blue">{{ job.sourcePlatform }}</span>
+                <span class="badge badge-gray" *ngIf="job.workArrangement">{{ job.workArrangement }}</span>
+              </p>
+            </div>
+            <div class="match-score-badge" [ngClass]="(job.matchScore?.totalScore || 0) >= 80 ? 'score-high' : ((job.matchScore?.totalScore || 0) >= 65 ? 'score-mid' : 'score-low')">
+              <span class="score-number">{{ job.matchScore?.totalScore || 0 }}%</span>
+              <span class="score-label">{{ job.matchScore?.recommendation || 'Score' }}</span>
+            </div>
+          </div>
+
+          <p class="job-description-snippet">
+            {{ job.description.length > 250 ? (job.description | slice:0:250) + '...' : job.description }}
+          </p>
+
+          <!-- Skills breakdown -->
+          <div class="skills-row">
+            <span class="skill-label">Matching:</span>
+            <span *ngFor="let skill of job.matchScore?.matchingSkills" class="tag tag-match">{{ skill }}</span>
+            <span *ngIf="job.matchScore?.missingSkills?.length" class="skill-label" style="margin-left: 8px;">Missing:</span>
+            <span *ngFor="let missing of job.matchScore?.missingSkills" class="tag tag-missing">{{ missing }}</span>
+          </div>
+
+          <!-- Job Actions -->
+          <div class="job-actions">
+            <a [href]="job.jobUrl" target="_blank" class="btn btn-secondary btn-sm" id="btn-open-job-{{job.id}}">
+              Open Original Job
+            </a>
+            <button class="btn btn-secondary btn-sm" (click)="openJobModal(job)">
+              View Full Evaluation
+            </button>
+            <button class="btn btn-primary btn-sm" (click)="prepareApplication(job)" id="btn-prepare-{{job.id}}">
+              Generate Tailored Application
+            </button>
+            <button class="btn btn-danger btn-sm" (click)="skipJob(job)">
+              Skip
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION: APPROVAL QUEUE ==================== -->
+    <div *ngIf="activeTab === 'approval'" class="tab-pane fade-in">
+      <div class="section-header">
+        <h2>Applications Pending Candidate Approval</h2>
+        <p>In accordance with Operating Mode rules, review and approve tailored application packages before submission.</p>
+      </div>
+
+      <div *ngIf="getPendingApprovalApps().length === 0" class="empty-state">
+        <p>✅ All prepared applications have been reviewed or submitted. No pending items in queue!</p>
+      </div>
+
+      <div *ngFor="let app of getPendingApprovalApps()" class="approval-card">
+        <div class="approval-header">
+          <div>
+            <h3>{{ app.employer }} — {{ app.positionTitle }}</h3>
+            <p class="text-secondary">{{ app.platform }} • Match Score: <strong>{{ app.matchScore }}%</strong> • Mode: {{ app.submissionMode }}</p>
+            <p class="pending-notice" *ngIf="app.pendingReason">⚠️ Reason: {{ app.pendingReason }}</p>
+          </div>
+          <div class="approval-actions">
+            <button class="btn btn-secondary" (click)="openApprovalModal(app)">Preview & Edit</button>
+            <button class="btn btn-success" (click)="approveAndSubmit(app)" id="btn-approve-{{app.id}}">
+              ✓ Approve & Submit
+            </button>
+          </div>
+        </div>
+
+        <!-- Screening Questions Summary -->
+        <div class="screening-box" *ngIf="app.screeningQuestions.length">
+          <h4>Screening Questions & Truthful Answers:</h4>
+          <ul>
+            <li *ngFor="let q of app.screeningQuestions">
+              <strong>{{ q.question }}</strong>: <em>{{ q.answer }}</em>
+              <span *ngIf="q.requiresApproval" class="badge badge-amber" style="margin-left: 6px;">Needs Verification</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION: APPLICATIONS TRACKER ==================== -->
+    <div *ngIf="activeTab === 'applications'" class="tab-pane fade-in">
+      <div class="filter-bar">
+        <input type="text" [(ngModel)]="appSearchQuery" (keyup.enter)="loadApplications()" placeholder="Search applications by company or position..." class="form-input">
+        <select [(ngModel)]="appStatusFilter" (change)="loadApplications()" class="form-select">
+          <option value="">All Statuses</option>
+          <option value="PendingApproval">Pending Approval</option>
+          <option value="ReadyToSubmit">Ready to Submit</option>
+          <option value="Submitted">Submitted</option>
+          <option value="SubmissionUnconfirmed">Submission Unconfirmed</option>
+          <option value="Failed">Failed</option>
+          <option value="Interview">Interview</option>
+          <option value="Rejected">Rejected</option>
+          <option value="Offer">Offer</option>
+        </select>
+        <button class="btn btn-primary" (click)="loadApplications()">Filter</button>
+      </div>
+
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Company & Role</th>
+              <th>Platform</th>
+              <th>Match Score</th>
+              <th>Status</th>
+              <th>Submitted Time (Karachi)</th>
+              <th>Reference</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let app of applications">
+              <td>
+                <strong>{{ app.employer }}</strong>
+                <div class="text-secondary" style="font-size: 12px;">{{ app.positionTitle }}</div>
+              </td>
+              <td>{{ app.platform }}</td>
+              <td><strong>{{ app.matchScore }}%</strong></td>
+              <td>
+                <span class="badge" [ngClass]="{
+                  'badge-green': app.status === 'Submitted' || app.status === 'Offer' || app.status === 'Interview',
+                  'badge-amber': app.status === 'PendingApproval' || app.status === 'ReadyToSubmit',
+                  'badge-rose': app.status === 'Failed' || app.status === 'Rejected',
+                  'badge-gray': app.status === 'Skipped' || app.status === 'SubmissionUnconfirmed'
+                }">{{ app.status }}</span>
+              </td>
+              <td>{{ formatDate(app.submissionTimestampUtc) }}</td>
+              <td><code>{{ app.confirmationReference || '—' }}</code></td>
+              <td>
+                <div class="table-actions">
+                  <button class="btn btn-secondary btn-xs" (click)="openApprovalModal(app)">View Documents</button>
+                  <button class="btn btn-secondary btn-xs" (click)="openStatusModal(app)">Update Status</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION: CV & PROFILE ==================== -->
+    <div *ngIf="activeTab === 'cv'" class="tab-pane fade-in">
+      <div class="cv-grid">
+        <!-- Profile Editor -->
+        <div class="profile-card">
+          <div class="section-header">
+            <h3>Candidate Verified Profile (profile.json)</h3>
+            <button class="btn btn-primary btn-sm" (click)="saveProfile()">Save Changes</button>
+          </div>
+          
+          <div *ngIf="profile">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" [(ngModel)]="profile.fullName" class="form-input">
+            </div>
+            <div class="form-group">
+              <label>Headline</label>
+              <input type="text" [(ngModel)]="profile.headline" class="form-input">
+            </div>
+            <div class="form-group">
+              <label>Email & Phone</label>
+              <div style="display: flex; gap: 8px;">
+                <input type="text" [(ngModel)]="profile.email" class="form-input">
+                <input type="text" [(ngModel)]="profile.phone" class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Location</label>
+              <input type="text" [(ngModel)]="profile.location" class="form-input">
+            </div>
+            <div class="form-group">
+              <label>Professional Summary</label>
+              <textarea [(ngModel)]="profile.summary" rows="4" class="form-textarea"></textarea>
+            </div>
+
+            <h4>Pre-Approved Screening Question Answers</h4>
+            <div class="form-group">
+              <label>Work Authorization</label>
+              <input type="text" [(ngModel)]="profile.screeningAnswers.workAuthorization" class="form-input">
+            </div>
+            <div class="form-group">
+              <label>Notice Period</label>
+              <input type="text" [(ngModel)]="profile.screeningAnswers.noticePeriod" class="form-input">
+            </div>
+            <div class="form-group">
+              <label>Target Compensation</label>
+              <input type="text" [(ngModel)]="profile.screeningAnswers.targetCompensation" class="form-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- Master CV & Tailored List -->
+        <div class="cv-side-panel">
+          <div class="card-section">
+            <h3>Approved Master CV</h3>
+            <p class="text-secondary" style="font-size: 13px; margin-bottom: 8px;">Source: cv/master-cv/Jibran_Yousuf_Khan_CV.txt</p>
+            <pre class="code-preview" style="max-height: 250px;">{{ masterCvText }}</pre>
+          </div>
+
+          <div class="card-section" style="margin-top: 16px;">
+            <h3>Generated Tailored CVs</h3>
+            <div *ngIf="tailoredCvs.length === 0" class="empty-state">
+              <p>No tailored CVs generated yet. Generate an application from Job Search!</p>
+            </div>
+            <ul class="file-list">
+              <li *ngFor="let cv of tailoredCvs" class="file-item">
+                <div>
+                  <strong>{{ cv.employer }}</strong> (Job: {{ cv.jobId }})
+                  <div class="text-secondary" style="font-size: 11px;">{{ cv.fileName }} • {{ cv.fileSizeBytes }} bytes</div>
+                </div>
+                <a [href]="getDownloadUrl(cv.fileName)" download class="btn btn-secondary btn-xs">Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION: DAILY REPORTS ==================== -->
+    <div *ngIf="activeTab === 'reports'" class="tab-pane fade-in">
+      <div class="section-header">
+        <h2>Daily Email Execution Summaries (email-reports.json)</h2>
+        <p>Every scheduled run automatically delivers a complete execution report to your inbox.</p>
+      </div>
+
+      <div *ngIf="reports.length === 0" class="empty-state">
+        <p>No daily reports recorded yet. Click "Run Cycle Now" in Overview to generate today's report!</p>
+      </div>
+
+      <div class="reports-list">
+        <div *ngFor="let report of reports" class="report-card">
+          <div class="report-header">
+            <div>
+              <h3>{{ report.subject }}</h3>
+              <p class="text-secondary">
+                Date: {{ report.reportDate }} • Duration: {{ report.durationFormatted }} • Recipient: {{ report.recipientEmail }}
+              </p>
+            </div>
+            <div>
+              <span class="badge" [ngClass]="report.deliverySuccess ? 'badge-green' : 'badge-amber'">
+                {{ report.deliverySuccess ? 'Delivered' : 'Delivery Notice' }}
+              </span>
+            </div>
+          </div>
+
+          <div class="report-metrics-row">
+            <div><strong>{{ report.totalJobsDiscovered }}</strong> Discovered</div>
+            <div><strong>{{ report.highMatchJobsCount }}</strong> High Matches</div>
+            <div><strong style="color: #34d399;">{{ report.applicationsSubmittedCount }}</strong> Submitted</div>
+            <div><strong style="color: #fbbf24;">{{ report.applicationsPendingCount }}</strong> Pending</div>
+            <div><strong>{{ report.duplicatesSkippedCount }}</strong> Duplicates Skipped</div>
+          </div>
+
+          <div class="report-delivery-note">
+            <span>Status: {{ report.deliveryStatusMessage }}</span>
+          </div>
+
+          <div class="report-actions">
+            <button class="btn btn-secondary btn-sm" (click)="openReportModal(report)">Preview Full Email</button>
+            <button class="btn btn-primary btn-sm" (click)="resendReport(report)">Resend Email Report</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION: SETTINGS ==================== -->
+    <div *ngIf="activeTab === 'settings'" class="tab-pane fade-in">
+      <div class="section-header">
+        <h2>JY Career Agent Configuration (settings.json)</h2>
+        <button class="btn btn-primary" (click)="saveSettings()">Save Configuration</button>
+      </div>
+
+      <div *ngIf="settings" class="settings-grid">
+        <!-- Operating Mode -->
+        <div class="settings-card">
+          <h3>Operating Mode & Limits</h3>
+          <div class="form-group">
+            <label>Operating Mode</label>
+            <select [(ngModel)]="settings.operatingMode" class="form-select">
+              <option value="ApprovalRequired">Mode A: Approval Required (Default)</option>
+              <option value="Assisted">Mode B: Assisted Application</option>
+              <option value="Automatic">Mode C: Authorized Automatic Application (Opt-in)</option>
+            </select>
+            <small class="form-hint">Mode A prepares applications and requires explicit candidate click before submission.</small>
+          </div>
+
+          <div class="form-group">
+            <label>Maximum Daily Confirmed Submissions</label>
+            <input type="number" [(ngModel)]="settings.maxDailyApplications" min="1" max="50" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label>Daily Scheduled Start Time</label>
+            <input type="text" [(ngModel)]="settings.schedule.scheduledTime" class="form-input">
+            <small class="form-hint">Timezone: Asia/Karachi (Default: 09:00:00)</small>
+          </div>
+        </div>
+
+        <!-- Match Weights -->
+        <div class="settings-card">
+          <h3>Job Match Scoring Weights (%)</h3>
+          <div class="slider-group">
+            <label>.NET / C# Relevance ({{ settings.matchWeights.dotNetWeight }}%)</label>
+            <input type="range" [(ngModel)]="settings.matchWeights.dotNetWeight" min="0" max="50" class="form-range">
+          </div>
+          <div class="slider-group">
+            <label>Angular / Frontend Relevance ({{ settings.matchWeights.angularWeight }}%)</label>
+            <input type="range" [(ngModel)]="settings.matchWeights.angularWeight" min="0" max="50" class="form-range">
+          </div>
+          <div class="slider-group">
+            <label>Seniority Fit ({{ settings.matchWeights.seniorityWeight }}%)</label>
+            <input type="range" [(ngModel)]="settings.matchWeights.seniorityWeight" min="0" max="50" class="form-range">
+          </div>
+          <div class="slider-group">
+            <label>SQL / Data Relevance ({{ settings.matchWeights.sqlWeight }}%)</label>
+            <input type="range" [(ngModel)]="settings.matchWeights.sqlWeight" min="0" max="50" class="form-range">
+          </div>
+          <div class="slider-group">
+            <label>Industry Relevance ({{ settings.matchWeights.industryWeight }}%)</label>
+            <input type="range" [(ngModel)]="settings.matchWeights.industryWeight" min="0" max="50" class="form-range">
+          </div>
+          <div class="slider-group">
+            <label>Location & Work Setup ({{ settings.matchWeights.locationWeight }}%)</label>
+            <input type="range" [(ngModel)]="settings.matchWeights.locationWeight" min="0" max="50" class="form-range">
+          </div>
+        </div>
+
+        <!-- Email & SMTP Settings -->
+        <div class="settings-card">
+          <h3>Email Notification & SMTP Settings</h3>
+          <div class="form-group">
+            <label>Recipient Email</label>
+            <input type="email" [(ngModel)]="settings.email.recipientEmail" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Sender Email</label>
+            <input type="email" [(ngModel)]="settings.email.senderEmail" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>SMTP Host & Port</label>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" [(ngModel)]="settings.email.smtpHost" class="form-input" style="flex: 2;">
+              <input type="number" [(ngModel)]="settings.email.smtpPort" class="form-input" style="flex: 1;">
+            </div>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" [(ngModel)]="settings.email.dailyReportEnabled" id="chk-daily-email">
+            <label for="chk-daily-email">Daily Email Report Enabled</label>
+          </div>
+          <div class="secret-box">
+            <span>SMTP Password Status:</span>
+            <strong [class.text-success]="settings.secretStatus?.hasSmtpPassword" [class.text-amber]="!settings.secretStatus?.hasSmtpPassword">
+              {{ settings.secretStatus?.hasSmtpPassword ? '✓ Configured in Environment Variable' : '⚠️ Missing (JY_EMAIL__SMTP_PASSWORD)' }}
+            </strong>
+          </div>
+          <div style="margin-top: 12px;">
+            <button class="btn btn-secondary btn-sm" (click)="sendTestEmail()">Send Test Email</button>
+          </div>
+        </div>
+
+        <!-- AI Provider Settings -->
+        <div class="settings-card">
+          <h3>AI Agent Provider</h3>
+          <div class="form-group">
+            <label>Provider</label>
+            <select [(ngModel)]="settings.ai.provider" class="form-select">
+              <option value="TemplateEngine">TemplateEngine (Deterministic Offline Engine)</option>
+              <option value="OpenAI">OpenAI (ChatGPT)</option>
+              <option value="AzureOpenAI">Azure OpenAI</option>
+              <option value="Anthropic">Anthropic Claude</option>
+              <option value="Gemini">Google Gemini</option>
+              <option value="Ollama">Ollama (Local LLM)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Model</label>
+            <input type="text" [(ngModel)]="settings.ai.model" class="form-input">
+          </div>
+          <div class="secret-box">
+            <span>AI API Key Status:</span>
+            <strong [class.text-success]="settings.secretStatus?.hasAiApiKey" [class.text-amber]="!settings.secretStatus?.hasAiApiKey">
+              {{ settings.secretStatus?.hasAiApiKey ? '✓ Configured (JY_AI__API_KEY)' : 'Offline TemplateEngine Active' }}
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Document Review & Edit Modal -->
+  <div *ngIf="selectedApplication" class="modal-backdrop fade-in">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3>Application Package: {{ selectedApplication.employer }}</h3>
+          <p class="text-secondary">{{ selectedApplication.positionTitle }} • Match: {{ selectedApplication.matchScore }}%</p>
+        </div>
+        <button class="btn-close" (click)="closeApprovalModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tab-row">
+          <span class="active-subtab">Cover Letter (Tailored)</span>
+          <span style="margin-left: 12px; font-size: 13px; color: #94a3b8;">
+            CV Used: <strong>{{ selectedApplication.cvVersionUsed }}</strong>
+          </span>
+        </div>
+
+        <div *ngIf="!isEditingCoverLetter" class="doc-preview">
+          <pre>{{ selectedApplication.generatedCoverLetterText }}</pre>
+        </div>
+        <div *ngIf="isEditingCoverLetter">
+          <textarea [(ngModel)]="editingCoverLetter" rows="12" class="form-textarea" style="font-family: inherit; font-size: 14px;"></textarea>
+        </div>
+
+        <div style="margin-top: 10px; display: flex; justify-content: flex-end; gap: 8px;">
+          <button *ngIf="!isEditingCoverLetter" class="btn btn-secondary btn-sm" (click)="isEditingCoverLetter = true">Edit Letter</button>
+          <button *ngIf="isEditingCoverLetter" class="btn btn-primary btn-sm" (click)="saveEditedCoverLetter()">Save Changes</button>
+          <button *ngIf="isEditingCoverLetter" class="btn btn-secondary btn-sm" (click)="isEditingCoverLetter = false">Cancel</button>
+        </div>
+
+        <!-- Audit History -->
+        <h4 style="margin-top: 20px; font-size: 14px; border-top: 1px solid #334155; padding-top: 12px;">Audit History</h4>
+        <div class="audit-list">
+          <div *ngFor="let audit of selectedApplication.auditHistory" class="audit-item">
+            <span class="audit-time">{{ formatDate(audit.timestampUtc) }}</span>
+            <strong>{{ audit.action }}</strong> by {{ audit.performedBy }}: {{ audit.details }}
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeApprovalModal()">Close</button>
+        <button *ngIf="selectedApplication.status === 'PendingApproval' || selectedApplication.status === 'ReadyToSubmit'" class="btn btn-success" (click)="approveAndSubmit(selectedApplication)">
+          ✓ Approve & Submit
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status Update Modal -->
+  <div *ngIf="statusModalApp" class="modal-backdrop fade-in">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-header">
+        <h3>Update Application Status</h3>
+        <button class="btn-close" (click)="closeStatusModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>{{ statusModalApp.employer }}</strong> — {{ statusModalApp.positionTitle }}</p>
+        <div class="form-group" style="margin-top: 12px;">
+          <label>New Status</label>
+          <select [(ngModel)]="statusUpdateNewStatus" class="form-select">
+            <option value="Submitted">Submitted (Confirmed)</option>
+            <option value="SubmissionUnconfirmed">Submission Unconfirmed</option>
+            <option value="Interview">Interview Scheduled</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Offer">Offer Extended</option>
+            <option value="Withdrawn">Withdrawn</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Reason / Audit Note</label>
+          <input type="text" [(ngModel)]="statusUpdateReason" placeholder="e.g. Received confirmation email from HR" class="form-input">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeStatusModal()">Cancel</button>
+        <button class="btn btn-primary" (click)="saveStatusUpdate()">Save Status</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Job Evaluation Modal -->
+  <div *ngIf="selectedJobForModal" class="modal-backdrop fade-in">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3>{{ selectedJobForModal.employer }} — {{ selectedJobForModal.title }}</h3>
+          <p class="text-secondary">{{ selectedJobForModal.location }} • Match Score: <strong>{{ selectedJobForModal.matchScore?.totalScore }}%</strong></p>
+        </div>
+        <button class="btn-close" (click)="closeJobModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <h4>Match Score Breakdown:</h4>
+        <div class="breakdown-grid">
+          <div>.NET / C#: <strong>{{ selectedJobForModal.matchScore?.dotNetScore }}%</strong></div>
+          <div>Angular: <strong>{{ selectedJobForModal.matchScore?.angularScore }}%</strong></div>
+          <div>Seniority: <strong>{{ selectedJobForModal.matchScore?.seniorityScore }}%</strong></div>
+          <div>SQL / Data: <strong>{{ selectedJobForModal.matchScore?.sqlScore }}%</strong></div>
+          <div>Domain: <strong>{{ selectedJobForModal.matchScore?.industryScore }}%</strong></div>
+          <div>Location: <strong>{{ selectedJobForModal.matchScore?.locationScore }}%</strong></div>
+        </div>
+
+        <h4 style="margin-top: 16px;">Reasons to Apply:</h4>
+        <ul>
+          <li *ngFor="let r of selectedJobForModal.matchScore?.reasonsToApply">{{ r }}</li>
+        </ul>
+
+        <h4 style="margin-top: 12px;" *ngIf="selectedJobForModal.matchScore?.potentialConcerns?.length">Potential Concerns:</h4>
+        <ul>
+          <li *ngFor="let c of selectedJobForModal.matchScore?.potentialConcerns" style="color: #fbbf24;">{{ c }}</li>
+        </ul>
+
+        <h4 style="margin-top: 16px;">Job Description:</h4>
+        <div class="doc-preview">
+          <p>{{ selectedJobForModal.description }}</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeJobModal()">Close</button>
+        <button class="btn btn-primary" (click)="prepareApplication(selectedJobForModal); closeJobModal();">
+          Prepare Tailored Application
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email Report Preview Modal -->
+  <div *ngIf="selectedReportForModal" class="modal-backdrop fade-in">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <h3>{{ selectedReportForModal.subject }}</h3>
+        <button class="btn-close" (click)="closeReportModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div [innerHTML]="selectedReportForModal.htmlBody" class="report-html-container"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeReportModal()">Close</button>
+        <button class="btn btn-primary" (click)="resendReport(selectedReportForModal)">Resend Email</button>
+      </div>
+    </div>
+  </div>
+
+</div>

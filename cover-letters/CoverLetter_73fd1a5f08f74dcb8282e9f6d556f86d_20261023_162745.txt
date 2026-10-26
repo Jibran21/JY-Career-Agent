@@ -1,0 +1,16 @@
+﻿Date: October 23, 2026
+Hiring Team, Systems Limited / Tech Services Pakistan
+Re: Application for Senior .NET Core / ASP.NET Developer
+
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Senior .NET Core / ASP.NET Developer role at Systems Limited / Tech Services Pakistan. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.
+
+In the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.
+
+Your opening at Systems Limited / Tech Services Pakistan represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.
+
+Sincerely,
+Jibran Yousuf Khan
+jibrankhalily@gmail.com | +92 321 2351118
+Gulshan-e-Iqbal, Karachi, Pakistan

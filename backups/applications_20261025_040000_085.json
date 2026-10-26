@@ -1,0 +1,971 @@
+[
+  {
+    "id": "ee0c357f993e42398c88fec620afe834",
+    "jobId": "e066a667ad1b49379dd874dd50ceac2a",
+    "employer": "Aventrix Global / FinTech Solutions",
+    "positionTitle": "Senior Full Stack .NET & Angular Engineer",
+    "platform": "Rozee",
+    "jobUrl": "https://www.rozee.pk/job/senior-fullstack-net-angular-karachi",
+    "matchScore": 89,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_AventrixGlobalFinTechSolutions_e066a667_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_AventrixGlobalFinTechSolutions_e066a667_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_e066a667ad1b49379dd874dd50ceac2a_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_e066a667ad1b49379dd874dd50ceac2a_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Aventrix Global / FinTech Solutions\r\nRe: Application for Senior Full Stack .NET & Angular Engineer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior Full Stack .NET & Angular Engineer role at Aventrix Global / FinTech Solutions. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.\r\n\r\nYour opening at Aventrix Global / FinTech Solutions represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.5026781Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.5032417Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_AventrixGlobalFinTechSolutions_e066a667_20261023_162745.txt' and match score 89.0.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "87ceff61808141568b3bdc71046991f6",
+    "jobId": "73fd1a5f08f74dcb8282e9f6d556f86d",
+    "employer": "Systems Limited / Tech Services Pakistan",
+    "positionTitle": "Senior .NET Core / ASP.NET Developer",
+    "platform": "Rozee",
+    "jobUrl": "https://www.rozee.pk/job/senior-net-core-developer-karachi",
+    "matchScore": 86.8,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SystemsLimitedTechServicesPakistan_73fd1a5f_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_SystemsLimitedTechServicesPakistan_73fd1a5f_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_73fd1a5f08f74dcb8282e9f6d556f86d_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_73fd1a5f08f74dcb8282e9f6d556f86d_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Systems Limited / Tech Services Pakistan\r\nRe: Application for Senior .NET Core / ASP.NET Developer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior .NET Core / ASP.NET Developer role at Systems Limited / Tech Services Pakistan. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.\r\n\r\nYour opening at Systems Limited / Tech Services Pakistan represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.5533295Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.5533298Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_SystemsLimitedTechServicesPakistan_73fd1a5f_20261023_162745.txt' and match score 86.8.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "f1b2461aacb54947b29239c6aa28eec6",
+    "jobId": "1314ea2e5dcd48dab00a8d7ac76630ee",
+    "employer": "Optima Cloud Solutions (EMEA Remote)",
+    "positionTitle": "Senior Full Stack Engineer (.NET 8/9 & Angular)",
+    "platform": "LinkedIn",
+    "jobUrl": "https://www.linkedin.com/jobs/view/senior-full-stack-engineer-net-angular-remote",
+    "matchScore": 86.2,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_OptimaCloudSolutionsEMEARemote_1314ea2e_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_OptimaCloudSolutionsEMEARemote_1314ea2e_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_1314ea2e5dcd48dab00a8d7ac76630ee_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_1314ea2e5dcd48dab00a8d7ac76630ee_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Optima Cloud Solutions (EMEA Remote)\r\nRe: Application for Senior Full Stack Engineer (.NET 8/9 & Angular)\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior Full Stack Engineer (.NET 8/9 & Angular) role at Optima Cloud Solutions (EMEA Remote). With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at Optima Cloud Solutions (EMEA Remote) represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.5768325Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.5768329Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_OptimaCloudSolutionsEMEARemote_1314ea2e_20261023_162745.txt' and match score 86.2.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "9790134ca3324210b99d4970da427721",
+    "jobId": "8f7b2cfb596041199f9f8bfff4e5a923",
+    "employer": "Lemon.io",
+    "positionTitle": "Senior React Full-stack Developer",
+    "platform": "Remotive",
+    "jobUrl": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091133",
+    "matchScore": 86,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Lemonio_8f7b2cfb_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_Lemonio_8f7b2cfb_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_8f7b2cfb596041199f9f8bfff4e5a923_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_8f7b2cfb596041199f9f8bfff4e5a923_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Lemon.io\r\nRe: Application for Senior React Full-stack Developer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior React Full-stack Developer role at Lemon.io. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nThroughout my career, I have specialized in large-scale data systems. At Think Enabled, I architected and maintained SSIS ETL pipelines feeding real-time Power BI dashboards and executive analytics, introducing incremental data-loading models that significantly reduced processing overhead. At Smart Works Systems, I conducted deep T-SQL query and execution-plan optimization across large relational databases.\r\n\r\nYour opening at Lemon.io represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.6116732Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.6116736Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_Lemonio_8f7b2cfb_20261023_162745.txt' and match score 86.0.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "f778d3ce218343e8b1ffba3bab933d37",
+    "jobId": "674e63f6f00343f9997d7bab9a969c20",
+    "employer": "Lemon.io",
+    "positionTitle": "Senior back-end Engineer",
+    "platform": "Remotive",
+    "jobUrl": "https://remotive.com/remote-jobs/software-development/senior-back-end-engineer-2091132",
+    "matchScore": 86,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Lemonio_674e63f6_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_Lemonio_674e63f6_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_674e63f6f00343f9997d7bab9a969c20_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_674e63f6f00343f9997d7bab9a969c20_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Lemon.io\r\nRe: Application for Senior back-end Engineer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior back-end Engineer role at Lemon.io. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at Lemon.io represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.652167Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.6521673Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_Lemonio_674e63f6_20261023_162745.txt' and match score 86.0.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "968b662fbf5f467585f2767bd846c924",
+    "jobId": "20f9d0c9a2eb4e919669973869177782",
+    "employer": "BioCare Health Systems",
+    "positionTitle": "Senior C# .NET Developer (Healthcare & ERP)",
+    "platform": "Indeed",
+    "jobUrl": "https://pk.indeed.com/viewjob?jk=biocare-healthcare-erp-net-karachi",
+    "matchScore": 74.8,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_BioCareHealthSystems_20f9d0c9_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_BioCareHealthSystems_20f9d0c9_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_20f9d0c9a2eb4e919669973869177782_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_20f9d0c9a2eb4e919669973869177782_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, BioCare Health Systems\r\nRe: Application for Senior C# .NET Developer (Healthcare & ERP)\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior C# .NET Developer (Healthcare & ERP) role at BioCare Health Systems. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at BioCare Health Systems represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.6903969Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.6903974Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_BioCareHealthSystems_20f9d0c9_20261023_162745.txt' and match score 74.8.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "10a8127912bc455b8ed236d7004a1500",
+    "jobId": "4f92b1127e1b4c7683011173be00f6f0",
+    "employer": "Cognitive Solutions Asia",
+    "positionTitle": "Senior AI Application & .NET Engineer",
+    "platform": "Rozee",
+    "jobUrl": "https://www.rozee.pk/job/senior-ai-application-net-engineer",
+    "matchScore": 74.2,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_CognitiveSolutionsAsia_4f92b112_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_CognitiveSolutionsAsia_4f92b112_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_4f92b1127e1b4c7683011173be00f6f0_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_4f92b1127e1b4c7683011173be00f6f0_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Cognitive Solutions Asia\r\nRe: Application for Senior AI Application & .NET Engineer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior AI Application & .NET Engineer role at Cognitive Solutions Asia. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at Cognitive Solutions Asia represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.7116432Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.7116435Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_CognitiveSolutionsAsia_4f92b112_20261023_162745.txt' and match score 74.2.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "11c1085d4ba44d4cad5e5c86e109a790",
+    "jobId": "c041e42a1eb04bf69275724c9ed7e2f2",
+    "employer": "Finz Global Financial Technologies",
+    "positionTitle": "Lead .NET Core Software Architect",
+    "platform": "LinkedIn",
+    "jobUrl": "https://www.linkedin.com/jobs/view/lead-net-core-software-architect-karachi",
+    "matchScore": 72.8,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_FinzGlobalFinancialTechnologies_c041e42a_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_FinzGlobalFinancialTechnologies_c041e42a_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_c041e42a1eb04bf69275724c9ed7e2f2_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_c041e42a1eb04bf69275724c9ed7e2f2_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Finz Global Financial Technologies\r\nRe: Application for Lead .NET Core Software Architect\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Lead .NET Core Software Architect role at Finz Global Financial Technologies. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.\r\n\r\nYour opening at Finz Global Financial Technologies represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.7482151Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.7482154Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_FinzGlobalFinancialTechnologies_c041e42a_20261023_162745.txt' and match score 72.8.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "481fd6e24eef4837ad107ee1404ebbde",
+    "jobId": "2ab1ef119a484f0e89520a8d3ad7f276",
+    "employer": "Banyansoftware",
+    "positionTitle": "Forward Deployed Engineer",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.nl/jobs/companies/banyansoftware/forward-deployed-engineer-354025",
+    "matchScore": 71.8,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Banyansoftware_2ab1ef11_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_Banyansoftware_2ab1ef11_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_2ab1ef119a484f0e89520a8d3ad7f276_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_2ab1ef119a484f0e89520a8d3ad7f276_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Banyansoftware\r\nRe: Application for Forward Deployed Engineer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Forward Deployed Engineer role at Banyansoftware. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nThroughout my career, I have specialized in large-scale data systems. At Think Enabled, I architected and maintained SSIS ETL pipelines feeding real-time Power BI dashboards and executive analytics, introducing incremental data-loading models that significantly reduced processing overhead. At Smart Works Systems, I conducted deep T-SQL query and execution-plan optimization across large relational databases.\r\n\r\nYour opening at Banyansoftware represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.7966565Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.7966567Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_Banyansoftware_2ab1ef11_20261023_162745.txt' and match score 71.8.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "d3393ea57eae420aabf6ba8a6b7af005",
+    "jobId": "92f52e51052d4f28bd339baadbd87dc4",
+    "employer": "nice",
+    "positionTitle": "Lead Software Architect",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/nice/lead-software-architect-394758",
+    "matchScore": 70.5,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_nice_92f52e51_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_nice_92f52e51_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_92f52e51052d4f28bd339baadbd87dc4_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_92f52e51052d4f28bd339baadbd87dc4_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, nice\r\nRe: Application for Lead Software Architect\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Lead Software Architect role at nice. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.\r\n\r\nYour opening at nice represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.8270103Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.8270107Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_nice_92f52e51_20261023_162745.txt' and match score 70.5.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "9e5bbbbba16b4a6485f7fbad1df33649",
+    "jobId": "3feaae1d9d50451f9ce2daaad37ab44b",
+    "employer": "Sunweb Group",
+    "positionTitle": "Senior AI Solution Specialist",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.nl/jobs/companies/sunweb-group/senior-ai-solution-specialist-rotterdam-496873",
+    "matchScore": 70.2,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SunwebGroup_3feaae1d_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_SunwebGroup_3feaae1d_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_3feaae1d9d50451f9ce2daaad37ab44b_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_3feaae1d9d50451f9ce2daaad37ab44b_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, Sunweb Group\r\nRe: Application for Senior AI Solution Specialist\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior AI Solution Specialist role at Sunweb Group. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nThroughout my career, I have specialized in large-scale data systems. At Think Enabled, I architected and maintained SSIS ETL pipelines feeding real-time Power BI dashboards and executive analytics, introducing incremental data-loading models that significantly reduced processing overhead. At Smart Works Systems, I conducted deep T-SQL query and execution-plan optimization across large relational databases.\r\n\r\nYour opening at Sunweb Group represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.8807641Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.8807644Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_SunwebGroup_3feaae1d_20261023_162745.txt' and match score 70.2.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "af6afaa63ced442bba9d11a56a6a1aa6",
+    "jobId": "f54832dfe01641e58a70cede005a6626",
+    "employer": "SeatGeek",
+    "positionTitle": "Engineering Manager, Core Engineering",
+    "platform": "Jobicy",
+    "jobUrl": "https://jobicy.com/jobs/156592-engineering-manager-core-engineering",
+    "matchScore": 68,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_SeatGeek_f54832df_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_SeatGeek_f54832df_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_f54832dfe01641e58a70cede005a6626_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_f54832dfe01641e58a70cede005a6626_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, SeatGeek\r\nRe: Application for Engineering Manager, Core Engineering\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Engineering Manager, Core Engineering role at SeatGeek. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at SeatGeek represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.9207289Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.9207293Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_SeatGeek_f54832df_20261023_162745.txt' and match score 68.0.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "87ac58587fa9471a8277a8a9a196705f",
+    "jobId": "1d48e572481c4c8f9a5025fbae6270ed",
+    "employer": "OBRO AG",
+    "positionTitle": "ICT System Engineer & Developer 80-100 %",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.ch/jobs/companies/obro-ag/ict-system-engineer-developer-80-100-zug-273029",
+    "matchScore": 67,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_OBROAG_1d48e572_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_OBROAG_1d48e572_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_1d48e572481c4c8f9a5025fbae6270ed_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_1d48e572481c4c8f9a5025fbae6270ed_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, OBRO AG\r\nRe: Application for ICT System Engineer & Developer 80-100 %\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the ICT System Engineer & Developer 80-100 % role at OBRO AG. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.\r\n\r\nYour opening at OBRO AG represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.9592417Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.959242Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_OBROAG_1d48e572_20261023_162745.txt' and match score 67.0.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "f9aa362f81124687a1a91373d334b738",
+    "jobId": "e5cfd6adebe34ce1a08bc9dc420cac7a",
+    "employer": "p3b AG",
+    "positionTitle": "Software-Entwickler:in .NET / Azure 80-100%",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.ch/jobs/companies/p3b-ag/software-entwicklerin-net-azure-80-100-bern-143843",
+    "matchScore": 66.8,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_p3bAG_e5cfd6ad_20261023_162745.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_p3bAG_e5cfd6ad_20261023_162745.txt",
+    "coverLetterVersionUsed": "CoverLetter_e5cfd6adebe34ce1a08bc9dc420cac7a_20261023_162745.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_e5cfd6adebe34ce1a08bc9dc420cac7a_20261023_162745.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, p3b AG\r\nRe: Application for Software-Entwickler:in .NET / Azure 80-100%\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Software-Entwickler:in .NET / Azure 80-100% role at p3b AG. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at p3b AG represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:45.9901526Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:45.9901529Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_p3bAG_e5cfd6ad_20261023_162745.txt' and match score 66.8.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "f5f1895bb17a4b378e652a5cc0eddbe6",
+    "jobId": "1aea13372fb04ac89193a3eb0735e374",
+    "employer": "AlmavivA de Belgique",
+    "positionTitle": "Backend Developer .Net - Remote from EU - Deadline 27/10/26",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.nl/jobs/companies/almaviva-de-belgique/backend-developer-net-remote-from-eu-deadline-27-10-26-the-hague-434774",
+    "matchScore": 66.5,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_AlmavivAdeBelgique_1aea1337_20261023_162746.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_AlmavivAdeBelgique_1aea1337_20261023_162746.txt",
+    "coverLetterVersionUsed": "CoverLetter_1aea13372fb04ac89193a3eb0735e374_20261023_162746.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_1aea13372fb04ac89193a3eb0735e374_20261023_162746.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, AlmavivA de Belgique\r\nRe: Application for Backend Developer .Net - Remote from EU - Deadline 27/10/26\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Backend Developer .Net - Remote from EU - Deadline 27/10/26 role at AlmavivA de Belgique. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at AlmavivA de Belgique represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:46.0242156Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:46.0242162Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_AlmavivAdeBelgique_1aea1337_20261023_162746.txt' and match score 66.5.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "ce2a05d7c37a48349719f6ccfaf17b2c",
+    "jobId": "5208e97040b2499dbf787494fe90796a",
+    "employer": "nice",
+    "positionTitle": "Senior Solutions Architect",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/nice/senior-solutions-architect-238397",
+    "matchScore": 66,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_nice_5208e970_20261023_162746.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_nice_5208e970_20261023_162746.txt",
+    "coverLetterVersionUsed": "CoverLetter_5208e97040b2499dbf787494fe90796a_20261023_162746.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_5208e97040b2499dbf787494fe90796a_20261023_162746.txt",
+    "generatedCoverLetterText": "Date: October 23, 2026\r\nHiring Team, nice\r\nRe: Application for Senior Solutions Architect\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior Solutions Architect role at nice. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nThroughout my career, I have specialized in large-scale data systems. At Think Enabled, I architected and maintained SSIS ETL pipelines feeding real-time Power BI dashboards and executive analytics, introducing incremental data-loading models that significantly reduced processing overhead. At Smart Works Systems, I conducted deep T-SQL query and execution-plan optimization across large relational databases.\r\n\r\nYour opening at nice represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-23T16:27:46.0751901Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-23T16:27:46.0751906Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_nice_5208e970_20261023_162746.txt' and match score 66.0.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "a373d08df9374b778131d44314e5ee4a",
+    "jobId": "c3eeb3b54d354fa8b9c3e7017406d46b",
+    "employer": "Docebo",
+    "positionTitle": "Technical Account Manager - German Speaking",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.com/jobs/companies/docebo/remote-technical-account-manager-german-speaking-272819",
+    "matchScore": 68.8,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Docebo_c3eeb3b5_20261024_040022.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_Docebo_c3eeb3b5_20261024_040022.txt",
+    "coverLetterVersionUsed": "CoverLetter_c3eeb3b54d354fa8b9c3e7017406d46b_20261024_040022.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_c3eeb3b54d354fa8b9c3e7017406d46b_20261024_040022.txt",
+    "generatedCoverLetterText": "Date: October 24, 2026\r\nHiring Team, Docebo\r\nRe: Application for Technical Account Manager - German Speaking\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Technical Account Manager - German Speaking role at Docebo. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nThroughout my career, I have specialized in large-scale data systems. At Think Enabled, I architected and maintained SSIS ETL pipelines feeding real-time Power BI dashboards and executive analytics, introducing incremental data-loading models that significantly reduced processing overhead. At Smart Works Systems, I conducted deep T-SQL query and execution-plan optimization across large relational databases.\r\n\r\nYour opening at Docebo represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-24T04:00:22.8970839Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-24T04:00:22.8971573Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_Docebo_c3eeb3b5_20261024_040022.txt' and match score 68.8.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "10bdf4580ded432daaa75de441a0a746",
+    "jobId": "e978d4ac59b04ed9b62e087f3be283ea",
+    "employer": "Andercore",
+    "positionTitle": "Staff Engineer",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.com/jobs/companies/andercore/staff-engineer-berlin-461575",
+    "matchScore": 67.2,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_Andercore_e978d4ac_20261024_040022.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_Andercore_e978d4ac_20261024_040022.txt",
+    "coverLetterVersionUsed": "CoverLetter_e978d4ac59b04ed9b62e087f3be283ea_20261024_040022.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_e978d4ac59b04ed9b62e087f3be283ea_20261024_040022.txt",
+    "generatedCoverLetterText": "Date: October 24, 2026\r\nHiring Team, Andercore\r\nRe: Application for Staff Engineer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Staff Engineer role at Andercore. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn the financial technology domain at Aion Digital, I engineered core digital banking solutions for retail, corporate, and internet banking. I developed secure, high-concurrency RESTful APIs powering mission-critical workflows, while building accessible frontends using modern Angular and TypeScript.\r\n\r\nYour opening at Andercore represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-24T04:00:22.9297507Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-24T04:00:22.929751Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_Andercore_e978d4ac_20261024_040022.txt' and match score 67.2.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  },
+  {
+    "id": "da50dc8b6a3b4d85a38d667981897c99",
+    "jobId": "9d7616bf3a4746d99d61203bcffec956",
+    "employer": "prolific",
+    "positionTitle": "Senior Product Engineer",
+    "platform": "Arbeitnow",
+    "jobUrl": "https://www.arbeitnow.co.uk/jobs/companies/prolific/remote-senior-product-engineer-499608",
+    "matchScore": 67.2,
+    "cvVersionUsed": "Jibran_Yousuf_Khan_CV_prolific_9d7616bf_20261024_040022.txt",
+    "cvFilePath": "cv\\tailored\\Jibran_Yousuf_Khan_CV_prolific_9d7616bf_20261024_040022.txt",
+    "coverLetterVersionUsed": "CoverLetter_9d7616bf3a4746d99d61203bcffec956_20261024_040022.txt",
+    "coverLetterFilePath": "cover-letters\\CoverLetter_9d7616bf3a4746d99d61203bcffec956_20261024_040022.txt",
+    "generatedCoverLetterText": "Date: October 24, 2026\r\nHiring Team, prolific\r\nRe: Application for Senior Product Engineer\r\n\r\nDear Hiring Manager,\r\n\r\nI am writing to express my strong interest in the Senior Product Engineer role at prolific. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.\r\n\r\nIn my current role as Senior Consultant at Think Enabled, I lead the technical design and architectural planning of complex enterprise modules for supply chain and clinical operations. My work centers on clean architectural patterns, multi-threaded backend processing, asynchronous performance tuning, and real-time communication using SignalR hubs and Firebase push services.\r\n\r\nYour opening at prolific represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.\r\n\r\nSincerely,\r\nJibran Yousuf Khan\r\njibrankhalily@gmail.com | +92 321 2351118\r\nGulshan-e-Iqbal, Karachi, Pakistan\r\n",
+    "submissionMode": "ApprovalRequired",
+    "status": "PendingApproval",
+    "attemptCount": 0,
+    "applicationStartTimeUtc": "2026-10-24T04:00:22.9898834Z",
+    "timeZone": "Asia/Karachi",
+    "pendingReason": "Application prepared. Awaiting candidate review and submission approval.",
+    "nextRecommendedAction": "Review tailored CV and cover letter in Approval Queue.",
+    "screeningQuestions": [
+      {
+        "question": "What is your notice period / availability?",
+        "answer": "1 Month (30 days)",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Notice Period)."
+      },
+      {
+        "question": "Are you authorized to work in Pakistan / open to remote arrangements?",
+        "answer": "Authorized to work in Pakistan; require standard visa sponsorship for international relocation.",
+        "requiresApproval": false,
+        "reason": "Answered from pre-approved profile settings (Work Authorization)."
+      },
+      {
+        "question": "How many years of professional experience do you have with .NET / C# and Angular?",
+        "answer": "Approximately 10 years of professional software engineering experience specializing in C#, .NET Core, Angular, and SQL Server.",
+        "requiresApproval": false,
+        "reason": "Answered from verified career timeline (2015–Present)."
+      }
+    ],
+    "auditHistory": [
+      {
+        "timestampUtc": "2026-10-24T04:00:22.9898846Z",
+        "action": "ApplicationPrepared",
+        "performedBy": "Agent",
+        "details": "Prepared tailored application with CV 'Jibran_Yousuf_Khan_CV_prolific_9d7616bf_20261024_040022.txt' and match score 67.2.",
+        "previousStatus": "Discovered",
+        "newStatus": "PendingApproval"
+      }
+    ]
+  }
+]

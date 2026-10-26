@@ -1,0 +1,16 @@
+﻿Date: October 26, 2026
+Hiring Team, Apaleo
+Re: Application for Staff Backend Engineer - Platform (f/m/d)
+
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Staff Backend Engineer - Platform (f/m/d) role at Apaleo. With approximately 10 years of hands-on software engineering experience specializing in C#, .NET Core, ASP.NET Web API, Angular, and high-performance MS SQL Server architectures, I have delivered resilient, scalable solutions across FinTech, digital banking, healthcare ERP, and supply chain operations.
+
+Throughout my career, I have specialized in large-scale data systems. At Think Enabled, I architected and maintained SSIS ETL pipelines feeding real-time Power BI dashboards and executive analytics, introducing incremental data-loading models that significantly reduced processing overhead. At Smart Works Systems, I conducted deep T-SQL query and execution-plan optimization across large relational databases.
+
+Your opening at Apaleo represents an exciting alignment with my technical background and passion for building dependable, high-throughput software systems. I look forward to discussing how my experience can contribute to your engineering goals.
+
+Sincerely,
+Jibran Yousuf Khan
+jibrankhalily@gmail.com | +92 321 2351118
+Gulshan-e-Iqbal, Karachi, Pakistan
