@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: jy-career-agent-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: JY_EMAIL__SMTP_HOST
+        value: smtp.gmail.com
+      - key: JY_EMAIL__SMTP_PORT
+        value: 587
+      - key: JY_EMAIL__SMTP_USERNAME
+        sync: false
+      - key: JY_EMAIL__SMTP_PASSWORD
+        sync: false

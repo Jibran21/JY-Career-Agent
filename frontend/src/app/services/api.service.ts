@@ -15,7 +15,17 @@ import {
   providedIn: 'root'
 })
 export class ApiService {
-  private readonly baseUrl = 'http://localhost:5000/api';
+  private get baseUrl(): string {
+    if (typeof window !== 'undefined') {
+      const customUrl = localStorage.getItem('jy_api_base_url');
+      if (customUrl) return customUrl.replace(/\/+$/, '');
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        return 'http://localhost:5000/api';
+      }
+      return '/api';
+    }
+    return 'http://localhost:5000/api';
+  }
 
   constructor(private http: HttpClient) {}
 
