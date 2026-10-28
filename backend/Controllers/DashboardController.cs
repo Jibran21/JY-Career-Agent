@@ -17,19 +17,25 @@ public class DashboardController : ControllerBase
     private readonly IApplicationWorkflowService _workflowService;
     private readonly JobSourceFactory _sourceFactory;
     private readonly IEmailReportingService _emailService;
+    private readonly IHostApplicationLifetime _appLifetime;
+    private readonly ILogger<DashboardController> _logger;
 
     public DashboardController(
         IJsonStorageService storageService,
         AgentOrchestrator orchestrator,
         IApplicationWorkflowService workflowService,
         JobSourceFactory sourceFactory,
-        IEmailReportingService emailService)
+        IEmailReportingService emailService,
+        IHostApplicationLifetime appLifetime,
+        ILogger<DashboardController> logger)
     {
         _storageService = storageService;
         _orchestrator = orchestrator;
         _workflowService = workflowService;
         _sourceFactory = sourceFactory;
         _emailService = emailService;
+        _appLifetime = appLifetime;
+        _logger = logger;
     }
 
     [HttpGet("stats")]
@@ -75,17 +81,29 @@ public class DashboardController : ControllerBase
     }
 
     [HttpPost("run-now")]
-    public async Task<IActionResult> TriggerManualRun(CancellationToken cancellationToken)
+    public IActionResult TriggerManualRun()
     {
         if (_orchestrator.IsRunning)
         {
             return Conflict(new { message = "An execution cycle is already running." });
         }
 
-        // Run asynchronously in background task so UI doesn't block
-        _ = Task.Run(() => _orchestrator.RunCycleAsync("DashboardRunNow", CancellationToken.None));
+        // Run asynchronously in detached background task using app lifetime stopping token
+        var stoppingToken = _appLifetime.ApplicationStopping;
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                await _orchestrator.RunCycleAsync("DashboardRunNow", stoppingToken);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Background execution cycle triggered via Dashboard encountered fatal error: {Message}", 
+                    AgentOrchestrator.SanitizeError(ex.Message));
+            }
+        }, CancellationToken.None);
 
-        return Accepted(new { message = "JY Career Agent execution cycle launched successfully." });
+        return Accepted(new { message = "JY Career Agent execution cycle launched successfully in background." });
     }
 
     [HttpGet("notifications")]

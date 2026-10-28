@@ -13,6 +13,8 @@ public class AgentState
     public int MatchedJobsToday { get; set; } = 0;
     public int ApplicationsSubmittedToday { get; set; } = 0;
     public int ApplicationsPendingToday { get; set; } = 0;
+    public int ApplicationsManualActionToday { get; set; } = 0;
+    public int ApplicationsSkippedToday { get; set; } = 0;
     public int ApplicationsFailedToday { get; set; } = 0;
     public string? LastCorrelationId { get; set; }
     public string? LastError { get; set; }

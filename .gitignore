@@ -49,3 +49,13 @@ scratch/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# --- Generated Documents, CVs & Backups ---
+backups/
+**/backups/
+cover-letters/
+**/cover-letters/
+cv/tailored/
+**/cv/tailored/
+*.pdf
+

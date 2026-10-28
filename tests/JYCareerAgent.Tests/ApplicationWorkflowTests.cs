@@ -10,6 +10,7 @@ using Xunit;
 
 namespace JYCareerAgent.Tests;
 
+[Collection("SchedulerLock")]
 public class ApplicationWorkflowTests : IDisposable
 {
     private readonly string _testDir;
@@ -123,5 +124,100 @@ public class ApplicationWorkflowTests : IDisposable
         // Assert
         result.Status.Should().Be(ApplicationStatus.Skipped);
         result.PendingReason.Should().Contain("Daily confirmed application limit");
+    }
+
+    [Fact]
+    public async Task SubmitApplication_InAutomaticMode_OnDirectSupportedPlatform_ShouldAutomaticallySubmitWithoutUserApproval()
+    {
+        var job = new JobListing { Id = "test-job-auto", Employer = "RemoteDevs Co", Title = "Senior .NET Lead", SourcePlatform = "Remotive", JobUrl = "https://remotive.com/jobs/1" };
+        var profile = new CandidateProfile { FullName = "Jibran Yousuf Khan" };
+        var settings = new AgentSettings { OperatingMode = OperatingMode.Automatic, MaxDailyApplications = 50 };
+        await _storageService.SaveAsync("data/settings.json", settings);
+
+        var app = await _workflowService.PrepareApplicationAsync(job, profile, settings);
+
+        // Act - Submit automatically with userExplicitApproval: false
+        var result = await _workflowService.SubmitApplicationAsync(app.Id, userExplicitApproval: false);
+
+        // Assert
+        result.Status.Should().Be(ApplicationStatus.Submitted);
+        result.ConfirmationReference.Should().StartWith("APP-CONF-");
+        result.SubmissionTimestampUtc.Should().NotBeNull();
+        result.AuditHistory.Should().Contain(a => a.Action == "ApplicationSubmitted");
+    }
+
+    [Fact]
+    public async Task SubmitApplication_InAutomaticMode_OnProtectedPlatform_ShouldMarkAsManualActionRequired()
+    {
+        var job = new JobListing { Id = "test-job-linkedin", Employer = "BigTech Org", Title = "Senior Backend Engineer", SourcePlatform = "LinkedIn", JobUrl = "https://linkedin.com/jobs/view/123" };
+        var profile = new CandidateProfile { FullName = "Jibran Yousuf Khan" };
+        var settings = new AgentSettings { OperatingMode = OperatingMode.Automatic, MaxDailyApplications = 50 };
+        await _storageService.SaveAsync("data/settings.json", settings);
+
+        var app = await _workflowService.PrepareApplicationAsync(job, profile, settings);
+
+        // Act - Attempt automated submission on LinkedIn
+        var result = await _workflowService.SubmitApplicationAsync(app.Id, userExplicitApproval: false);
+
+        // Assert - Must be marked ManualActionRequired, NOT bypassed or scraped illegally
+        result.Status.Should().Be(ApplicationStatus.ManualActionRequired);
+        result.PendingReason.Should().Contain("LinkedIn requires manual interaction");
+        result.JobUrl.Should().Be("https://linkedin.com/jobs/view/123");
+        result.AuditHistory.Should().Contain(a => a.Action == "PreparedForManualSubmission");
+    }
+
+    [Fact]
+    public async Task SubmitApplication_InAutomaticMode_WithUnapprovedScreeningQuestions_ShouldMarkAsManualActionRequired()
+    {
+        var job = new JobListing { Id = "test-job-screening", Employer = "FinTech Global", Title = "C# Core Specialist", SourcePlatform = "Arbeitnow" };
+        var profile = new CandidateProfile { FullName = "Jibran Yousuf Khan" };
+        var settings = new AgentSettings { OperatingMode = OperatingMode.Automatic, MaxDailyApplications = 50 };
+        await _storageService.SaveAsync("data/settings.json", settings);
+
+        var app = await _workflowService.PrepareApplicationAsync(job, profile, settings);
+        
+        // Add an unapproved/unverified screening question
+        app.ScreeningQuestions.Add(new ScreeningQuestionAnswer
+        {
+            Question = "Are you willing to relocate to Tokyo immediately?",
+            RequiresApproval = true
+        });
+        var list = await _workflowService.GetApplicationsAsync();
+        var existing = list.First(a => a.Id == app.Id);
+        existing.ScreeningQuestions = app.ScreeningQuestions;
+        await _storageService.SaveAsync("data/applications.json", list);
+
+        // Act - Attempt automatic submission
+        var result = await _workflowService.SubmitApplicationAsync(app.Id, userExplicitApproval: false);
+
+        // Assert - Never fabricate answers; mark for manual candidate verification
+        result.Status.Should().Be(ApplicationStatus.ManualActionRequired);
+        result.PendingReason.Should().Contain("Screening questions require candidate verification");
+    }
+
+    [Fact]
+    public async Task SubmitApplication_WhenSafeTestModeIsActive_ShouldHoldInPendingApproval()
+    {
+        Environment.SetEnvironmentVariable("JY_SAFE_TEST_MODE", "true");
+        try
+        {
+            var job = new JobListing { Id = "test-job-safe", Employer = "SafeCorp", Title = ".NET Specialist", SourcePlatform = "Remotive" };
+            var profile = new CandidateProfile { FullName = "Jibran Yousuf Khan" };
+            var settings = new AgentSettings { OperatingMode = OperatingMode.Automatic, MaxDailyApplications = 50 };
+            await _storageService.SaveAsync("data/settings.json", settings);
+
+            var app = await _workflowService.PrepareApplicationAsync(job, profile, settings);
+
+            // Act - In safe test mode, live applications must never fire
+            var result = await _workflowService.SubmitApplicationAsync(app.Id, userExplicitApproval: false);
+
+            // Assert
+            result.Status.Should().Be(ApplicationStatus.PendingApproval);
+            result.PendingReason.Should().Contain("Safe test simulation mode active");
+        }
+        finally
+        {
+            Environment.SetEnvironmentVariable("JY_SAFE_TEST_MODE", null);
+        }
     }
 }

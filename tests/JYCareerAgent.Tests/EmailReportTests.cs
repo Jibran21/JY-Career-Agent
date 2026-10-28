@@ -8,6 +8,7 @@ using Xunit;
 
 namespace JYCareerAgent.Tests;
 
+[Collection("SchedulerLock")]
 public class EmailReportTests : IDisposable
 {
     private readonly string _testDir;
@@ -105,26 +106,40 @@ public class EmailReportTests : IDisposable
     public async Task SendDailyReportAsync_WhenSmtpPasswordMissing_ShouldRecordLocalNoticeWithoutCrashing()
     {
         // Arrange
-        var settings = new AgentSettings { Email = new EmailSettings { DailyReportEnabled = true } };
-        await _storageService.SaveAsync("data/settings.json", settings);
+        var prevEnv1 = Environment.GetEnvironmentVariable("JY_EMAIL__SMTP_PASSWORD");
+        var prevEnv2 = Environment.GetEnvironmentVariable("JY_EMAIL:SMTP_PASSWORD");
 
-        var report = new EmailReportRecord
+        try
         {
-            Subject = "Test Subject",
-            HtmlBody = "<html>Test</html>",
-            PlainTextBody = "Test"
-        };
+            Environment.SetEnvironmentVariable("JY_EMAIL__SMTP_PASSWORD", "");
+            Environment.SetEnvironmentVariable("JY_EMAIL:SMTP_PASSWORD", "");
 
-        // Act
-        var result = await _emailService.SendDailyReportAsync(report);
+            var settings = new AgentSettings { Email = new EmailSettings { DailyReportEnabled = true } };
+            await _storageService.SaveAsync("data/settings.json", settings);
 
-        // Assert
-        result.Should().BeFalse();
-        report.DeliveryStatusMessage.Should().Contain("SMTP Password not configured");
+            var report = new EmailReportRecord
+            {
+                Subject = "Test Subject",
+                HtmlBody = "<html>Test</html>",
+                PlainTextBody = "Test"
+            };
 
-        // Report should still be persisted to history
-        var history = await _emailService.GetReportHistoryAsync();
-        history.Should().HaveCount(1);
-        history[0].DeliverySuccess.Should().BeFalse();
+            // Act
+            var result = await _emailService.SendDailyReportAsync(report);
+
+            // Assert
+            result.Should().BeFalse();
+            report.DeliveryStatusMessage.Should().Contain("SMTP Password not configured");
+
+            // Report should still be persisted to history
+            var history = await _emailService.GetReportHistoryAsync();
+            history.Should().HaveCount(1);
+            history[0].DeliverySuccess.Should().BeFalse();
+        }
+        finally
+        {
+            Environment.SetEnvironmentVariable("JY_EMAIL__SMTP_PASSWORD", prevEnv1);
+            Environment.SetEnvironmentVariable("JY_EMAIL:SMTP_PASSWORD", prevEnv2);
+        }
     }
 }

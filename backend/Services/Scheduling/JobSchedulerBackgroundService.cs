@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using JYCareerAgent.Api.Models;
 using JYCareerAgent.Api.Services.Storage;
 
@@ -7,6 +8,7 @@ public class JobSchedulerBackgroundService : BackgroundService
 {
     private readonly IServiceProvider _serviceProvider;
     private readonly ILogger<JobSchedulerBackgroundService> _logger;
+    private DateTime? _lastLoggedNextRunUtc;
 
     public JobSchedulerBackgroundService(
         IServiceProvider serviceProvider,
@@ -18,7 +20,7 @@ public class JobSchedulerBackgroundService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _logger.LogInformation("JY Career Agent Scheduler BackgroundService started.");
+        _logger.LogInformation("JY Career Agent Scheduler BackgroundService started. Target: Daily at 09:00:00 Asia/Karachi (PKT, UTC+5).");
 
         while (!stoppingToken.IsCancellationRequested)
         {
@@ -32,59 +34,89 @@ public class JobSchedulerBackgroundService : BackgroundService
 
                 if (!settings.Schedule.Enabled)
                 {
-                    _logger.LogInformation("Daily scheduler is disabled in settings. Pausing check for 30 minutes.");
+                    _logger.LogInformation("Daily scheduler is disabled in settings. Pausing checks for 30 minutes.");
                     await Task.Delay(TimeSpan.FromMinutes(30), stoppingToken);
                     continue;
                 }
 
-                // Calculate next run time in Asia/Karachi
+                // Parse scheduled time of day (default: 09:00:00 AM)
+                if (!TimeSpan.TryParse(settings.Schedule.ScheduledTime, out var scheduledTimeOfDay))
+                {
+                    scheduledTimeOfDay = new TimeSpan(9, 0, 0);
+                }
+
                 var karachiZone = GetKarachiTimeZone();
                 var nowUtc = DateTime.UtcNow;
                 var nowKarachi = TimeZoneInfo.ConvertTimeFromUtc(nowUtc, karachiZone);
 
-                if (!TimeSpan.TryParse(settings.Schedule.ScheduledTime, out var scheduledTimeOfDay))
-                {
-                    scheduledTimeOfDay = new TimeSpan(9, 0, 0); // Default 9:00 AM
-                }
+                // Load existing state to inspect last run time and status
+                var state = await storage.LoadAsync<AgentState>("data/agent-state.json", stoppingToken) ?? new AgentState();
 
-                var todayScheduledKarachi = nowKarachi.Date.Add(scheduledTimeOfDay);
-                DateTime nextRunKarachi;
-                if (nowKarachi < todayScheduledKarachi)
-                {
-                    nextRunKarachi = todayScheduledKarachi;
-                }
-                else
-                {
-                    nextRunKarachi = todayScheduledKarachi.AddDays(1);
-                }
+                // Compute next scheduled run or detect missed catch-up
+                var (nextRunKarachi, isMissedCatchUp) = CalculateNextRun(
+                    nowKarachi, 
+                    scheduledTimeOfDay, 
+                    state.LastRunStartTime, 
+                    state.LastRunStatus, 
+                    karachiZone);
 
                 var nextRunUtc = TimeZoneInfo.ConvertTimeToUtc(nextRunKarachi, karachiZone);
                 var delay = nextRunUtc - nowUtc;
 
-                // Update agent state with next run time
-                var state = await storage.LoadAsync<AgentState>("data/agent-state.json", stoppingToken) ?? new AgentState();
-                state.NextScheduledRun = nextRunUtc;
-                await storage.SaveAsync("data/agent-state.json", state, createBackup: false, stoppingToken);
-
-                _logger.LogInformation("Next scheduled run is at {NextRunKarachi:yyyy-MM-dd HH:mm:ss} PKT (Delay: {Hours:F1}h {Minutes:F0}m)", 
-                    nextRunKarachi, delay.TotalHours, delay.Minutes);
-
-                if (delay > TimeSpan.Zero)
+                // Update durable state only if changed
+                if (state.NextScheduledRun != nextRunUtc)
                 {
-                    // Delay until scheduled time with periodic check for stop token or manual triggers
-                    var delayMs = (int)Math.Min(delay.TotalMilliseconds, 60000); // Check at least once a minute
-                    await Task.Delay(delayMs, stoppingToken);
+                    state.NextScheduledRun = nextRunUtc;
+                    await storage.SaveAsync("data/agent-state.json", state, createBackup: false, stoppingToken);
+                }
 
-                    // Re-check if it's time
-                    if (DateTime.UtcNow >= nextRunUtc)
+                // Log next scheduled run (throttled to avoid log flooding)
+                if (_lastLoggedNextRunUtc != nextRunUtc)
+                {
+                    _lastLoggedNextRunUtc = nextRunUtc;
+                    if (isMissedCatchUp)
                     {
-                        _logger.LogInformation("Scheduled time reached ({NextRunKarachi}). Launching daily cycle...", nextRunKarachi);
-                        await orchestrator.RunCycleAsync("Scheduler", stoppingToken);
+                        _logger.LogWarning(">>> MISSED SCHEDULE DETECTED <<< Current PKT time is {NowKarachi:yyyy-MM-dd HH:mm:ss}, but 09:00 AM PKT run for today was not completed. Triggering immediate catch-up cycle...", nowKarachi);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("Next scheduled run is at {NextRunKarachi:yyyy-MM-dd HH:mm:ss} PKT / {NextRunUtc:yyyy-MM-dd HH:mm:ss} UTC (Delay: {Hours:F1}h {Minutes:F0}m)", 
+                            nextRunKarachi, nextRunUtc, delay.TotalHours, delay.Minutes);
                     }
                 }
-                else
+
+                if (isMissedCatchUp || delay <= TimeSpan.Zero)
                 {
+                    _logger.LogInformation("Launching scheduled daily cycle (Trigger: Scheduler)...");
                     await orchestrator.RunCycleAsync("Scheduler", stoppingToken);
+
+                    // Re-read state after run to reset next run to tomorrow
+                    var postRunState = await storage.LoadAsync<AgentState>("data/agent-state.json", stoppingToken) ?? new AgentState();
+                    var postRunNowKarachi = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, karachiZone);
+                    var (postRunNextKarachi, _) = CalculateNextRun(
+                        postRunNowKarachi, 
+                        scheduledTimeOfDay, 
+                        postRunState.LastRunStartTime, 
+                        postRunState.LastRunStatus, 
+                        karachiZone);
+
+                    var postRunNextUtc = TimeZoneInfo.ConvertTimeToUtc(postRunNextKarachi, karachiZone);
+                    postRunState.NextScheduledRun = postRunNextUtc;
+                    await storage.SaveAsync("data/agent-state.json", postRunState, createBackup: false, stoppingToken);
+
+                    _lastLoggedNextRunUtc = postRunNextUtc;
+                    _logger.LogInformation("Scheduled cycle finished. Next run updated to {NextRunKarachi:yyyy-MM-dd HH:mm:ss} PKT.", postRunNextKarachi);
+
+                    // Pause briefly before re-entering wait loop
+                    await Task.Delay(TimeSpan.FromSeconds(15), stoppingToken);
+                    continue;
+                }
+
+                // Wait responsive delay chunks (e.g. up to 30 seconds)
+                var delayMs = (int)Math.Min(delay.TotalMilliseconds, 30000);
+                if (delayMs > 0)
+                {
+                    await Task.Delay(delayMs, stoppingToken);
                 }
             }
             catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
@@ -101,7 +133,41 @@ public class JobSchedulerBackgroundService : BackgroundService
         _logger.LogInformation("JobSchedulerBackgroundService stopped.");
     }
 
-    private static TimeZoneInfo GetKarachiTimeZone()
+    public static (DateTime nextRunKarachi, bool isMissedCatchUp) CalculateNextRun(
+        DateTime nowKarachi, 
+        TimeSpan scheduledTimeOfDay, 
+        DateTime? lastRunUtc, 
+        string? lastRunStatus,
+        TimeZoneInfo karachiZone)
+    {
+        var todayScheduledKarachi = nowKarachi.Date.Add(scheduledTimeOfDay);
+
+        // Check if today's run has already completed in Karachi date
+        bool alreadyRanToday = false;
+        if (lastRunUtc.HasValue && string.Equals(lastRunStatus, "Completed", StringComparison.OrdinalIgnoreCase))
+        {
+            var lastRunKarachi = TimeZoneInfo.ConvertTimeFromUtc(lastRunUtc.Value, karachiZone);
+            if (lastRunKarachi.Date == nowKarachi.Date)
+            {
+                alreadyRanToday = true;
+            }
+        }
+
+        if (alreadyRanToday)
+        {
+            return (todayScheduledKarachi.AddDays(1), false);
+        }
+
+        if (nowKarachi >= todayScheduledKarachi)
+        {
+            // Scheduled time has arrived or passed today without a completed run
+            return (nowKarachi, true);
+        }
+
+        return (todayScheduledKarachi, false);
+    }
+
+    public static TimeZoneInfo GetKarachiTimeZone()
     {
         try
         {
@@ -111,7 +177,6 @@ public class JobSchedulerBackgroundService : BackgroundService
         {
             try
             {
-                // Windows timezone ID fallback
                 return TimeZoneInfo.FindSystemTimeZoneById("Pakistan Standard Time");
             }
             catch

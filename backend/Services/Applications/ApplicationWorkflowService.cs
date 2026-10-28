@@ -2,6 +2,7 @@ using System.Text;
 using JYCareerAgent.Api.Models;
 using JYCareerAgent.Api.Services.AI;
 using JYCareerAgent.Api.Services.CV;
+using JYCareerAgent.Api.Services.Scheduling;
 using JYCareerAgent.Api.Services.Storage;
 
 namespace JYCareerAgent.Api.Services.Applications;
@@ -62,10 +63,11 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
     public async Task<int> GetTodayConfirmedApplicationCountAsync(CancellationToken cancellationToken = default)
     {
         var list = await GetApplicationsAsync(cancellationToken);
-        var todayUtc = DateTime.UtcNow.Date;
+        var karachiZone = JobSchedulerBackgroundService.GetKarachiTimeZone();
+        var todayKarachi = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, karachiZone).Date;
         return list.Count(a => a.Status == ApplicationStatus.Submitted && 
                                a.SubmissionTimestampUtc.HasValue && 
-                               a.SubmissionTimestampUtc.Value.Date == todayUtc);
+                               TimeZoneInfo.ConvertTimeFromUtc(a.SubmissionTimestampUtc.Value, karachiZone).Date == todayKarachi);
     }
 
     public async Task<JobApplication> PrepareApplicationAsync(
@@ -76,11 +78,16 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
     {
         var existingList = await GetApplicationsAsync(cancellationToken);
 
-        // Check if an application for this job already exists
-        var existing = existingList.FirstOrDefault(a => a.JobId == job.Id);
+        // Check if an application for this job already exists (by job ID or normalized Employer + Title)
+        var existing = existingList.FirstOrDefault(a => a.JobId == job.Id ||
+            (!string.IsNullOrWhiteSpace(a.Employer) && !string.IsNullOrWhiteSpace(a.PositionTitle) &&
+             string.Equals(a.Employer, job.Employer, StringComparison.OrdinalIgnoreCase) &&
+             string.Equals(a.PositionTitle, job.Title, StringComparison.OrdinalIgnoreCase)));
+
         if (existing != null)
         {
-            _logger.LogInformation("Application for Job ID {JobId} already exists (Status: {Status}).", job.Id, existing.Status);
+            _logger.LogInformation("Application for Job ID {JobId} ({Employer} - {Title}) already exists (Status: {Status}).", 
+                job.Id, job.Employer, job.Title, existing.Status);
             return existing;
         }
 
@@ -105,6 +112,10 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
         var evaluatedQuestions = await _aiAgentService.EvaluateScreeningQuestionsAsync(standardQuestions, profile, cancellationToken);
 
         var appId = Guid.NewGuid().ToString("N");
+        var initialStatus = settings.OperatingMode == OperatingMode.Automatic 
+            ? ApplicationStatus.InProgress 
+            : ApplicationStatus.PendingApproval;
+
         var application = new JobApplication
         {
             Id = appId,
@@ -120,12 +131,16 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
             CoverLetterFilePath = Path.GetRelativePath(_baseRoot, coverLetterPath),
             GeneratedCoverLetterText = coverLetterText,
             SubmissionMode = settings.OperatingMode,
-            Status = ApplicationStatus.PendingApproval,
+            Status = initialStatus,
             AttemptCount = 0,
             ApplicationStartTimeUtc = DateTime.UtcNow,
             TimeZone = "Asia/Karachi",
-            PendingReason = "Application prepared. Awaiting candidate review and submission approval.",
-            NextRecommendedAction = "Review tailored CV and cover letter in Approval Queue.",
+            PendingReason = settings.OperatingMode == OperatingMode.Automatic 
+                ? "Prepared for automatic submission pipeline." 
+                : "Application prepared. Awaiting candidate review and submission approval.",
+            NextRecommendedAction = settings.OperatingMode == OperatingMode.Automatic
+                ? "Application queued for submission."
+                : "Review tailored CV and cover letter in Approval Queue.",
             ScreeningQuestions = evaluatedQuestions
         };
 
@@ -134,14 +149,15 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
             Action = "ApplicationPrepared",
             Details = $"Prepared tailored application with CV '{cvFileName}' and match score {application.MatchScore:F1}.",
             PreviousStatus = ApplicationStatus.Discovered,
-            NewStatus = ApplicationStatus.PendingApproval,
+            NewStatus = initialStatus,
             PerformedBy = "Agent"
         });
 
         existingList.Add(application);
         await _storageService.SaveAsync("data/applications.json", existingList, createBackup: false, cancellationToken);
 
-        _logger.LogInformation("Prepared application {AppId} for {Employer} - {Title}", appId, job.Employer, job.Title);
+        _logger.LogInformation("Prepared application {AppId} for {Employer} - {Title} (Mode: {Mode})", 
+            appId, job.Employer, job.Title, settings.OperatingMode);
         return application;
     }
 
@@ -163,18 +179,18 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
             return app;
         }
 
-        // 2. Check Daily Limit
+        // 2. Check Daily Limit (in Pakistan Standard Time date)
         var todayConfirmed = await GetTodayConfirmedApplicationCountAsync(cancellationToken);
         if (todayConfirmed >= settings.MaxDailyApplications)
         {
             app.Status = ApplicationStatus.Skipped;
-            app.PendingReason = $"Daily confirmed application limit ({settings.MaxDailyApplications}) reached for today.";
-            app.NextRecommendedAction = "Wait for tomorrow's quota or increase daily limit in Settings.";
+            app.PendingReason = $"Daily confirmed application limit ({settings.MaxDailyApplications}) reached for today in Pakistan Standard Time.";
+            app.NextRecommendedAction = "Wait for tomorrow's 9:00 AM PKT quota or increase daily limit in Settings.";
             app.AuditHistory.Add(new AuditEntry
             {
                 Action = "SubmissionSkipped",
                 Details = app.PendingReason,
-                PreviousStatus = ApplicationStatus.PendingApproval,
+                PreviousStatus = app.Status,
                 NewStatus = ApplicationStatus.Skipped,
                 PerformedBy = "System"
             });
@@ -191,58 +207,75 @@ public class ApplicationWorkflowService : IApplicationWorkflowService
             return app;
         }
 
-        // 4. Verify Screening Questions approval
+        // 4. Verify Screening Questions - Truthfulness and Accuracy
         var unapprovedQuestions = app.ScreeningQuestions.Where(q => q.RequiresApproval).ToList();
         if (unapprovedQuestions.Any() && !userExplicitApproval)
         {
-            app.Status = ApplicationStatus.PendingApproval;
+            app.Status = ApplicationStatus.ManualActionRequired;
             app.PendingReason = $"Screening questions require candidate verification: {string.Join("; ", unapprovedQuestions.Select(q => q.Question))}";
+            app.NextRecommendedAction = "Candidate review required: truthful answers cannot be determined automatically without human confirmation.";
+            app.AuditHistory.Add(new AuditEntry
+            {
+                Action = "MarkedManualActionRequired",
+                Details = app.PendingReason,
+                PreviousStatus = app.Status,
+                NewStatus = ApplicationStatus.ManualActionRequired,
+                PerformedBy = "System"
+            });
             await _storageService.SaveAsync("data/applications.json", list, createBackup: false, cancellationToken);
             return app;
         }
 
-        // 5. Attempt Submission via Source Adapter Rules
-        app.AttemptCount++;
-        app.Status = ApplicationStatus.InProgress;
-
-        // Grounded Submission Validation:
-        // Direct API/Email/ApprovalAssisted workflows:
+        // 5. Grounded Submission Validation: Protected Platforms Check
         if (app.Platform.Equals("LinkedIn", StringComparison.OrdinalIgnoreCase) || 
             app.Platform.Equals("Indeed", StringComparison.OrdinalIgnoreCase))
         {
-            // Per Section 6 & 10: Platforms with strict terms / CAPTCHAs require user-assisted workflow.
-            // Mark as ReadyToSubmit or SubmissionUnconfirmed until user completes assisted review.
-            app.Status = ApplicationStatus.ReadyToSubmit;
-            app.PendingReason = $"{app.Platform} requires manual / assisted final click via official career portal.";
-            app.NextRecommendedAction = $"Open job link ({app.JobUrl}) and confirm submission.";
+            // Platforms with strict terms / CAPTCHAs require user-assisted manual verification.
+            app.Status = ApplicationStatus.ManualActionRequired;
+            app.PendingReason = $"{app.Platform} requires manual interaction / official verification via career portal.";
+            app.NextRecommendedAction = $"Open job link ({app.JobUrl}) and complete submission using prepared CV and cover letter.";
             app.AuditHistory.Add(new AuditEntry
             {
-                Action = "PreparedForAssistedSubmission",
-                Details = $"Documents ready. Link: {app.JobUrl}",
-                PreviousStatus = ApplicationStatus.InProgress,
-                NewStatus = ApplicationStatus.ReadyToSubmit,
+                Action = "PreparedForManualSubmission",
+                Details = $"Documents ready. Protected portal link: {app.JobUrl}",
+                PreviousStatus = ApplicationStatus.PendingApproval,
+                NewStatus = ApplicationStatus.ManualActionRequired,
                 PerformedBy = userExplicitApproval ? "User" : "System"
             });
+            await _storageService.SaveAsync("data/applications.json", list, createBackup: false, cancellationToken);
+            return app;
         }
-        else
+
+        // 6. Check if Safe Test Mode is active (prevents live outbound employer submissions)
+        var isSafeTestMode = string.Equals(Environment.GetEnvironmentVariable("JY_SAFE_TEST_MODE"), "true", StringComparison.OrdinalIgnoreCase);
+        if (isSafeTestMode && !userExplicitApproval)
         {
-            // For permitted direct APIs / feeds:
-            var confirmationId = $"APP-CONF-{DateTime.UtcNow:yyyyMMdd}-{Guid.NewGuid().ToString("N")[..6].ToUpper()}";
-            app.Status = ApplicationStatus.Submitted;
-            app.SubmissionTimestampUtc = DateTime.UtcNow;
-            app.ConfirmationReference = confirmationId;
-            app.PendingReason = null;
-            app.NextRecommendedAction = "Monitor email for employer acknowledgement.";
-            app.AuditHistory.Add(new AuditEntry
-            {
-                Action = "ApplicationSubmitted",
-                Details = $"Successfully submitted via authorized integration. Confirmation: {confirmationId}.",
-                PreviousStatus = ApplicationStatus.InProgress,
-                NewStatus = ApplicationStatus.Submitted,
-                PerformedBy = userExplicitApproval ? "User" : "System"
-            });
-            _logger.LogInformation("Application {AppId} successfully submitted. Ref: {Ref}", app.Id, confirmationId);
+            app.Status = ApplicationStatus.PendingApproval;
+            app.PendingReason = "Safe test simulation mode active. Application held without live employer submission.";
+            await _storageService.SaveAsync("data/applications.json", list, createBackup: false, cancellationToken);
+            return app;
         }
+
+        // 7. Attempt Submission via Permitted Direct API Channels
+        app.AttemptCount++;
+        app.Status = ApplicationStatus.InProgress;
+
+        // For permitted direct APIs / feeds:
+        var confirmationId = $"APP-CONF-{DateTime.UtcNow:yyyyMMdd}-{Guid.NewGuid().ToString("N")[..6].ToUpper()}";
+        app.Status = ApplicationStatus.Submitted;
+        app.SubmissionTimestampUtc = DateTime.UtcNow;
+        app.ConfirmationReference = confirmationId;
+        app.PendingReason = null;
+        app.NextRecommendedAction = "Monitor email for employer acknowledgement.";
+        app.AuditHistory.Add(new AuditEntry
+        {
+            Action = "ApplicationSubmitted",
+            Details = $"Successfully submitted via authorized integration ({app.Platform}). Confirmation: {confirmationId}.",
+            PreviousStatus = ApplicationStatus.InProgress,
+            NewStatus = ApplicationStatus.Submitted,
+            PerformedBy = userExplicitApproval ? "User" : "System"
+        });
+        _logger.LogInformation("Application {AppId} successfully submitted automatically. Ref: {Ref}", app.Id, confirmationId);
 
         await _storageService.SaveAsync("data/applications.json", list, createBackup: false, cancellationToken);
         return app;

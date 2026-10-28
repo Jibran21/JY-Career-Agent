@@ -16,3 +16,5 @@ services:
         sync: false
       - key: JY_EMAIL__SMTP_PASSWORD
         sync: false
+      - key: JY_SCHEDULER_SECRET
+        sync: false

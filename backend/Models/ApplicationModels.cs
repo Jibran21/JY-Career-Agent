@@ -10,6 +10,7 @@ public enum ApplicationStatus
     Skipped,
     PendingApproval,
     ReadyToSubmit,
+    ManualActionRequired,
     InProgress,
     Submitted,
     SubmissionUnconfirmed,

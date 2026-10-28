@@ -21,6 +21,7 @@ public class EmailReportRecord
     public int HighMatchJobsCount { get; set; }
     public int ApplicationsSubmittedCount { get; set; }
     public int ApplicationsPendingCount { get; set; }
+    public int ApplicationsManualActionCount { get; set; }
     public int ApplicationsSkippedCount { get; set; }
     public int DuplicatesSkippedCount { get; set; }
     public int FailedSubmissionsCount { get; set; }
@@ -29,6 +30,7 @@ public class EmailReportRecord
     // Categorized applications
     public List<ApplicationReportSummary> ConfirmedSubmissions { get; set; } = new();
     public List<ApplicationReportSummary> PendingApprovals { get; set; } = new();
+    public List<ApplicationReportSummary> ManualActionsRequired { get; set; } = new();
     public List<ApplicationReportSummary> FailedAttempts { get; set; } = new();
     public List<ApplicationReportSummary> SubmissionUnconfirmedCases { get; set; } = new();
     public List<ApplicationReportSummary> SkippedOpportunities { get; set; } = new();

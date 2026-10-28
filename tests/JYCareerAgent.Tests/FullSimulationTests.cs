@@ -14,6 +14,7 @@ using Xunit;
 
 namespace JYCareerAgent.Tests;
 
+[Collection("SchedulerLock")]
 public class FullSimulationTests : IDisposable
 {
     private readonly string _testDir;
