@@ -17,10 +17,20 @@ jobs:
           echo "Triggering JY Career Agent at 09:00 AM PKT (04:00 UTC)..."
           echo "=========================================================="
           
+          # Determine target backend URL (allow override via secret if needed)
+          BASE_URL="${{ secrets.RENDER_BACKEND_URL }}"
+          if [ -z "$BASE_URL" ]; then
+            BASE_URL="https://jy-career-agent.onrender.com"
+          fi
+          
+          echo "Target Render Backend: $BASE_URL"
+          PRIMARY_URL="${BASE_URL}/api/scheduler/trigger"
+          echo "Dispatching trigger request to primary endpoint: $PRIMARY_URL..."
+          
           # Render free services may take 30-50s to cold-start from sleep.
-          # The endpoint responds immediately with 202 Accepted while running in background.
+          # The endpoint responds with 202 Accepted while running in background.
           RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" \
-            -X POST "https://jy-career-agent-backend.onrender.com/api/scheduler/trigger" \
+            -X POST "$PRIMARY_URL" \
             -H "User-Agent: GitHubActions-DailyScheduler/1.0" \
             -H "X-Scheduler-Key: ${{ secrets.JY_SCHEDULER_SECRET }}" \
             --connect-timeout 60 \
@@ -28,14 +38,35 @@ jobs:
             --retry 3 \
             --retry-delay 10)
           
-          echo "$RESPONSE"
-          STATUS=$(echo "$RESPONSE" | grep "HTTP_STATUS" | cut -d: -f2)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          STATUS=$(echo "$RESPONSE" | tail -n 1 | grep "HTTP_STATUS" | cut -d: -f2)
           
+          # If primary endpoint returned 404 (e.g. Render instance running prior image), try dashboard fallback
+          if [ "$STATUS" -eq 404 ]; then
+            echo "Primary endpoint returned HTTP 404. Falling back to ${BASE_URL}/api/dashboard/run-now..."
+            FALLBACK_URL="${BASE_URL}/api/dashboard/run-now"
+            RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" \
+              -X POST "$FALLBACK_URL" \
+              -H "User-Agent: GitHubActions-DailyScheduler/1.0" \
+              -H "X-Scheduler-Key: ${{ secrets.JY_SCHEDULER_SECRET }}" \
+              --connect-timeout 60 \
+              --max-time 120 \
+              --retry 3 \
+              --retry-delay 10)
+            
+            BODY=$(echo "$RESPONSE" | sed '$d')
+            STATUS=$(echo "$RESPONSE" | tail -n 1 | grep "HTTP_STATUS" | cut -d: -f2)
+          fi
+          
+          echo "Server HTTP Status: $STATUS"
           if [ "$STATUS" -eq 200 ] || [ "$STATUS" -eq 202 ]; then
             echo "Execution cycle accepted and launched successfully (HTTP $STATUS)."
+            echo "Server Response: $BODY"
           elif [ "$STATUS" -eq 409 ]; then
-            echo "Cycle already running on Render instance (HTTP 409 - Concurrency Protected)."
+            echo "Execution cycle is already running on Render instance (HTTP 409 - Concurrency Protected)."
+            echo "Server Response: $BODY"
           else
             echo "Error: Unexpected HTTP status $STATUS received from Render."
+            echo "Server Response: $BODY"
             exit 1
           fi

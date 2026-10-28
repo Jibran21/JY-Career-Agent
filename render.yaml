@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: jy-career-agent-backend
+    name: jy-career-agent
     env: docker
     dockerfilePath: ./Dockerfile
     plan: free

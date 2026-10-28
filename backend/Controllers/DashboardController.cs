@@ -19,6 +19,7 @@ public class DashboardController : ControllerBase
     private readonly IEmailReportingService _emailService;
     private readonly IHostApplicationLifetime _appLifetime;
     private readonly ILogger<DashboardController> _logger;
+    private readonly IConfiguration? _configuration;
 
     public DashboardController(
         IJsonStorageService storageService,
@@ -27,7 +28,8 @@ public class DashboardController : ControllerBase
         JobSourceFactory sourceFactory,
         IEmailReportingService emailService,
         IHostApplicationLifetime appLifetime,
-        ILogger<DashboardController> logger)
+        ILogger<DashboardController> logger,
+        IConfiguration? configuration = null)
     {
         _storageService = storageService;
         _orchestrator = orchestrator;
@@ -36,6 +38,7 @@ public class DashboardController : ControllerBase
         _emailService = emailService;
         _appLifetime = appLifetime;
         _logger = logger;
+        _configuration = configuration;
     }
 
     [HttpGet("stats")]
@@ -81,8 +84,28 @@ public class DashboardController : ControllerBase
     }
 
     [HttpPost("run-now")]
-    public IActionResult TriggerManualRun()
+    public IActionResult TriggerManualRun(
+        [FromHeader(Name = "X-Scheduler-Key")] string? headerKey,
+        [FromQuery] string? key)
     {
+        var configuredSecret = Environment.GetEnvironmentVariable("JY_SCHEDULER_SECRET") ?? 
+                               _configuration?["JY_SCHEDULER_SECRET"];
+        if (!string.IsNullOrWhiteSpace(configuredSecret))
+        {
+            var providedKey = headerKey ?? key;
+            var authHeader = Request.Headers.Authorization.ToString();
+            if (authHeader.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
+            {
+                providedKey = authHeader["Bearer ".Length..].Trim();
+            }
+
+            if (!string.Equals(configuredSecret, providedKey, StringComparison.Ordinal))
+            {
+                _logger.LogWarning("Unauthorized dashboard run-now trigger attempt from {IpAddress}", HttpContext.Connection.RemoteIpAddress);
+                return Unauthorized(new { message = "Invalid scheduler authorization token." });
+            }
+        }
+
         if (_orchestrator.IsRunning)
         {
             return Conflict(new { message = "An execution cycle is already running." });
